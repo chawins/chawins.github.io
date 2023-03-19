@@ -8,6 +8,8 @@ on:
 permissions:
   actions: write
   pull-requests: write
+  deployments: write
+  contents: write
 jobs:
   repo-sync:
     runs-on: ubuntu-latest
