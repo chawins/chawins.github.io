@@ -40,10 +40,12 @@ I am extremely fortunate to have mentored and worked with lots of brilliant stud
 - [Kathan Shah](https://www.linkedin.com/in/kathans/)
 - [David Huang](https://sg.linkedin.com/in/huang-david/)
 - [Jaewon Chang](https://www.linkedin.com/in/jaewon-chang-683918204/)
+- [Pranav Sheokand](https://www.linkedin.com/in/pranav-sheokand/)
+- [SooHyuk Cho](https://www.linkedin.com/in/soohyuk-cho/)
 
 ---
 
 ## academic services
 
 - Reviewer: ICML 2022 (Outstanding Reviewer) / BANDS (ICLR Workshop) 2023 / NeurIPS 2022, 2023
-- Program Committee: AISec 2022
+- Program Committee: AISec 2022, 2023
