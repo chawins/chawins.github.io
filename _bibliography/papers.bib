@@ -236,19 +236,31 @@
   year        = {2020}
 }
 
-@inproceedings{sitawarin_preprocessor_2023,
+
+@inproceedings{sitawarin_preprocessors_2023,
   abbr        = {ICML},
-  title       = {Preprocessors Matter! Realistic Decision-Based Attacks on Machine Learning Systems},
+  title       = {Preprocessors Matter! {{Realistic}} Decision-Based Attacks on Machine Learning Systems},
   booktitle   = {Proceedings of the 40th International Conference on Machine Learning},
-  abstract    = {Decision-based adversarial attacks construct inputs that fool a machine learning model into making targeted mispredictions. For the most part, these attacks have been applied directly to isolated neural network models. However, in practice, machine learning models are just a component of a much larger system, and we find that state-of-the-art query-based attacks are as much as four times less effective at attacking a prediction pipeline with only one preprocessor than attacking the machine learning model alone. We can explain this discrepancy by the fact that most preprocessors introduce some notion of ``invariant'' to the input space (e.g., with center crop, the prediction is invariant to the border pixels). Hence, attacks that are unaware of this invariance inevitably wastes a large number of queries to re-discover or to overcome it. We therefore develop techniques to first reverse-engineer preprocessors and then use the extracted information to attack the end-to-end system. Our extraction method uses only a few hundreds queries to learn the preprocessors used by most publicly available models, and our preprocessor-aware attack recovers the same efficacy as just attacking the model alone.},
   author      = {Sitawarin, Chawin and Tram{\`e}r, Florian and Carlini, Nicholas},
-  bibtex_show = {false},
-  month       = aug,
+  editor      = {Krause, Andreas and Brunskill, Emma and Cho, Kyunghyun and Engelhardt, Barbara and Sabato, Sivan and Scarlett, Jonathan},
   year        = {2023},
+  month       = jul,
+  series      = {Proceedings of Machine Learning Research},
+  volume      = {202},
+  pages       = {32008--32032},
+  publisher   = {{PMLR}},
+  url         = {https://proceedings.mlr.press/v202/sitawarin23a.html},
+  abstract    = {Decision-based attacks construct adversarial examples against a machine learning (ML) model by making only hard-label queries. These attacks have mainly been applied directly to standalone neural networks. However, in practice, ML models are just one component of a larger learning system. We find that by adding a single preprocessor in front of a classifier, state-of-the-art query-based attacks are up to seven\texttimes{} less effective at attacking a prediction pipeline than at attacking the model alone. We explain this discrepancy by the fact that most preprocessors introduce some notion of invariance to the input space. Hence, attacks that are unaware of this invariance inevitably waste a large number of queries to re-discover or overcome it. We, therefore, develop techniques to (i) reverse-engineer the preprocessor and then (ii) use this extracted information to attack the end-to-end system. Our preprocessors extraction method requires only a few hundred queries, and our preprocessor-aware attacks recover the same efficacy as when attacking the model alone. The code can be found at https://github.com/google-research/preprocessor-aware-black-box-attack.},
+  copyright   = {All rights reserved},
   code        = {https://github.com/google-research/preprocessor-aware-black-box-attack},
   arxiv       = {2210.03297},
-  pdf         = {https://arxiv.org/abs/2210.03297},
-  preview     = {prep_attack_thumbnail.png}
+  pdf         = {https://proceedings.mlr.press/v202/sitawarin23a.html},
+  preview     = {prep_attack_thumbnail.png},
+  bibtex_show = {true},
+  slides      = {preprocessor_attack_slides_icml2023.pdf},
+  poster      = {preprocessor_attack_poster_icml2023.pdf},
+  bibtex_show = {false},
+  talk        = {https://recorder-v3.slideslive.com/?share=83549&s=94c40a2b-dbe1-405e-a154-d14aa73cc73e}
 }
 
 @inproceedings{sitawarin_partbased_2023,
@@ -266,7 +278,7 @@
   code        = {https://github.com/chawins/adv-part-model},
   slides      = {part_model_slides_iclr2023.pdf},
   bibtex_show = {false},
-  talk        = {https://recorder-v3.slideslive.com/?share=81301&s=3f127eeb-5f87-45a3-bb52-2589956dcb0c},
+  talk        = {https://recorder-v3.slideslive.com/?share=83549&s=94c40a2b-dbe1-405e-a154-d14aa73cc73e},
   preview     = {part_model_thumbnail.png}
 }
 
