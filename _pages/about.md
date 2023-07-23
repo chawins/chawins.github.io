@@ -6,12 +6,16 @@ subtitle: chawins AT berkeley DOT edu
 
 profile:
   align: right
-  image: profile_pic.png
-  image_circular: true # crops the image to make it circular
+  image: profile_pic2.jpg
+  image_circular: false # crops the image to make it circular
   address: >
-    <p>"Chawin"</p>
-    <p>99.3% confidence</p>
-    <p>(he/him/his)</p>
+# <p>According to convnextv2, I am</p>
+# <p>"cardigan": 75.6%</p>
+# <p>"jean": 2.0%</p>
+# <p>"sunglasses": 1.0%</p>
+# <p>How I see myself</p>
+# <p>"giant panda": 100,000%</p>
+# <p>(he/him)</p>
 
 news: false  # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
