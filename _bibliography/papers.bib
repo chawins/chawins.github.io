@@ -105,13 +105,18 @@
 @inproceedings{sitawarin_adversarial_2021,
   abbr        = {NeurIPS},
   author      = {Sitawarin, Chawin and Kornaropoulos, Evgenios M and Song, Dawn and Wagner, David},
-  bibtex_show = {false},
+  abstract    = {Adversarial examples are a widely studied phenomenon in machine learning models. While most of the attention has been focused on neural networks, other practical models also suffer from this issue. In this work, we propose an algorithm for evaluating the adversarial robustness of $k$-nearest neighbor classification, i.e., finding a minimum-norm adversarial example. Diverging from previous proposals, we propose the first geometric approach by performing a search that expands outwards from a given input point. On a high level, the search radius expands to the nearby higher-order Voronoi cells until we find a cell that classifies differently from the input point. To scale the algorithm to a large $k$, we introduce approximation steps that find perturbation with smaller norm, compared to the baselines, in a variety of datasets. Furthermore, we analyze the structural properties of a dataset where our approach outperforms the competition.},
+  bibtex_show = {true},
   booktitle   = {Advances in Neural Information Processing Systems},
   pdf         = {https://openreview.net/forum?id=2j3B_YkC8r},
   publisher   = {{Curran Associates, Inc.}},
+  editor      = {A. Beygelzimer and Y. Dauphin and P. Liang and J. Wortman Vaughan},
   title       = {Adversarial Examples for k-Nearest Neighbor Classifiers Based on Higher-Order Voronoi Diagrams},
   volume      = {34},
-  year        = {2021}
+  year        = {2021},
+  preview     = {knn_neurips2021_thumbnail.png},
+  arxiv       = {2011.09719},
+  code        = {https://github.com/wagner-group/geoadex}
 }
 
 @article{sitawarin_darts_2018,
@@ -168,7 +173,7 @@
                  (called AdvRT), resulting in a large robustness gain.},
   arxiv       = {2207.03574},
   author      = {Chawin Sitawarin and Zachary Golan-Strieb and David Wagner},
-  bibtex_show = {false},
+  bibtex_show = {true},
   booktitle   = {Proceedings of the 39th International Conference on Machine Learning},
   note        = {Best Paper Award from AAAI-2022 Workshop on Adversarial Machine Learning and Beyond},
   pdf         = {https://proceedings.mlr.press/v162/sitawarin22a/sitawarin22a.pdf},
@@ -178,10 +183,12 @@
   code        = {https://github.com/wagner-group/demystify-random-transform},
   title       = {Demystifying the Adversarial Robustness of Random Transformation Defenses},
   url         = {https://proceedings.mlr.press/v162/sitawarin22a/sitawarin22a.pdf},
-  year        = {2022}
+  year        = {2022},
+  preview     = {demysify_icml2021_thumbnail.png}
 }
 
 @inproceedings{sitawarin_improving_2021,
+  title       = {Improving the Accuracy-Robustness Trade-off for Dual-Domain Adversarial Training},
   abbr        = {Workshop},
   abstract    = {While Adversarial Training remains the standard in improving robustness to adversarial attack, it often sacrifices accuracy on natural (clean) samples to a significant extent. Dual-domain training, optimizing on both clean and adversarial objectives, can help realize a better trade-off between clean accuracy and robustness. In this paper, we develop methods to improve dual-domain training for large adversarial perturbations and complex datasets. We first demonstrate that existing methods suffer from poor performance in this setting, due to a poor training procedure and overfitting to a particular attack. Then, we develop novel methods to address these issues. First, we show that adding KLD regularization to the dual training objective mitigates this overfitting and achieves a better trade-off, on CIFAR-10 and a 10-class subset of ImageNet. Then, inspired by domain adaptation, we develop a new normalization technique, Dual Batch Normalization, to further improve accuracy. Combining these two strategies, our model sets a new state of the art in trade-off performance for dual-domain adversarial training.},
   author      = {Sitawarin, Chawin and Sridhar, Arvind P and Wagner, David},
@@ -192,8 +199,9 @@
   month       = jul,
   pages       = {10},
   pdf         = {https://chawins.github.io/assets/pdf/UDL2021-paper-048.pdf},
-  title       = {Improving the Accuracy-Robustness Trade-off for Dual-Domain Adversarial Training},
-  year        = {2021}
+  year        = {2021},
+  preview     = {tradeoff_urdl2021_thumbnail.png},
+  code        = {https://github.com/wagner-group/dual-domain-at}
 }
 
 @article{sitawarin_inversedesigned_2018,
@@ -322,6 +330,7 @@
 
 @inproceedings{sitawarin_sat_2021,
   abbr        = {AISec},
+  title       = {SAT: Improving Adversarial Training via Curriculum-Based Loss Smoothing},
   abstract    = {Adversarial training (AT) has become a popular choice for training robust networks.
                  However, it tends to sacrifice clean accuracy heavily in favor of robustness and suffers
                  from a large generalization error. To address these concerns, we propose Smooth Adversarial
@@ -353,9 +362,9 @@
   publisher   = {Association for Computing Machinery},
   series      = {AISec '21},
   slides      = {aisec_2021.pdf},
-  title       = {SAT: Improving Adversarial Training via Curriculum-Based Loss Smoothing},
   url         = {https://doi.org/10.1145/3474369.3486878},
-  year        = {2021}
+  year        = {2021},
+  preview     = {sat_aisec2019_thumbnail.png}
 }
 
 @inproceedings{sridhar_mitigating_2021,
@@ -396,6 +405,7 @@
 @article{shah_spder_2023,
   abbr          = {Preprint},
   title         = {{{SPDER}}: Semiperiodic Damping-Enabled Object Representation},
+  abstract      = {We present a neural network architecture designed to naturally learn a positional embedding and overcome the spectral bias towards lower frequencies faced by conventional implicit neural representation networks. Our proposed architecture, SPDER, is a simple MLP that uses an activation function composed of a sinusoidal multiplied by a sublinear function, called the damping function. The sinusoidal enables the network to automatically learn the positional embedding of an input coordinate while the damping passes on the actual coordinate value by preventing it from being projected down to within a finite range of values. Our results indicate that SPDERs speed up training by 10x and converge to losses 1,500-50,000x lower than that of the state-of-the-art for image representation. SPDER is also state-of-the-art in audio representation. The superior representation capability allows SPDER to also excel on multiple downstream tasks such as image super-resolution and video frame interpolation. We provide intuition as to why SPDER significantly improves fitting compared to that of other INR methods while requiring no hyperparameter tuning or preprocessing.},
   author        = {Shah, Kathan and Sitawarin, Chawin},
   journal       = {Under submission},
   year          = {2023},
@@ -406,5 +416,6 @@
   copyright     = {All rights reserved},
   bibtex_show   = {true},
   arxiv         = {2306.15242},
-  preview       = {spder_thumbnail.png}
+  preview       = {spder_thumbnail.png},
+  code          = {https://github.com/katop1234/SPDER/}
 }
