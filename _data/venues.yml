@@ -10,4 +10,44 @@
   color: "#b31b1b"
 
 "Workshop":
+  color: "#609966"
+
+"ICCV":
+  url: https://iccv2023.thecvf.com/
+  color: "#1f5e96"
+
+"ICML":
+  url: https://icml.cc/
+  color: "#1f5e96"
+
+"ICLR":
+  url: https://iclr.cc/
+  color: "#1f5e96"
+
+"NeurIPS":
+  url: https://nips.cc/
+  color: "#1f5e96"
+
+"AISec":
+  url: https://aisec.cc/
+  color: "#609966"
+
+"VehicleSec":
+  url: https://www.ndss-symposium.org/ndss-program/vehiclesec-2023/
+  color: "#609966"
+
+"DLS":
+  url: https://dls2023.ieee-security.org/
+  color: "#609966"
+
+"CLEO":
+  color: "#1f5e96"
+
+"Photon. Res.":
+  color: "#1f5e96"
+
+"CCS":
+  color: "#1f5e96"
+
+"CISS":
   color: "#1f5e96"

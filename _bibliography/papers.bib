@@ -16,21 +16,6 @@
   year        = {2018}
 }
 
-@article{hingun_reap_2022,
-  abbr         = {ICCV},
-  abstract     = {Machine learning models are known to be susceptible to adversarial perturbation. One famous attack is the adversarial patch, a sticker with a particularly crafted pattern that makes the model incorrectly predict the object it is placed on. This attack presents a critical threat to cyber-physical systems that rely on cameras such as autonomous cars. Despite the significance of the problem, conducting research in this setting has been difficult; evaluating attacks and defenses in the real world is exceptionally costly while synthetic data are unrealistic. In this work, we propose the REAP (REalistic Adversarial Patch) Benchmark, a digital benchmark that allows the user to evaluate patch attacks on real images, and under real-world conditions. Built on top of the Mapillary Vistas dataset, our benchmark contains over 14,000 traffic signs. Each sign is augmented with a pair of geometric and lighting transformations, which can be used to apply a digitally generated patch realistically onto the sign, while matching real-world conditions. Using our benchmark, we perform the first large-scale assessments of adversarial patch attacks under realistic conditions. Our experiments suggest that adversarial patch attacks may present a smaller threat than previously believed and that the success rate of an attack on simpler digital simulations is not predictive of its actual effectiveness in practice.},
-  author       = {Hingun{${*}$}, Nabeel and Sitawarin{${*}$}, Chawin and Li, Jerry and Wagner, David},
-  bibtex_show  = {false},
-  journal      = {Proceedings of the IEEE/CVF international conference on computer vision (ICCV)},
-  month        = oct,
-  arxiv        = {2212.05680},
-  primaryclass = {cs},
-  title        = {REAP: A Large-Scale Realistic Adversarial Patch Benchmark},
-  year         = {2023},
-  code         = {https://github.com/wagner-group/reap-benchmark},
-  preview      = {reap_thumbnail.png}
-}
-
 @inproceedings{lin_inversedesigned_2016,
   abbr        = {CLEO},
   abstract    = {\textcopyright{} 2016 OSA. We describe a large-scale computational approach based on topology optimization that enables automatic discovery of novel nonlinear photonic structures. As examples, we design complex cavity and fiber geometries that can achieve high-efficiency nonlinear frequency conversion.},
@@ -184,7 +169,8 @@
   title       = {Demystifying the Adversarial Robustness of Random Transformation Defenses},
   url         = {https://proceedings.mlr.press/v162/sitawarin22a/sitawarin22a.pdf},
   year        = {2022},
-  preview     = {demysify_icml2021_thumbnail.png}
+  preview     = {demysify_icml2021_thumbnail.png},
+  award       = {true}
 }
 
 @inproceedings{sitawarin_improving_2021,
@@ -245,50 +231,7 @@
 }
 
 
-@inproceedings{sitawarin_preprocessors_2023,
-  abbr        = {ICML},
-  title       = {Preprocessors Matter! {{Realistic}} Decision-Based Attacks on Machine Learning Systems},
-  booktitle   = {Proceedings of the 40th International Conference on Machine Learning},
-  author      = {Sitawarin, Chawin and Tram{\`e}r, Florian and Carlini, Nicholas},
-  editor      = {Krause, Andreas and Brunskill, Emma and Cho, Kyunghyun and Engelhardt, Barbara and Sabato, Sivan and Scarlett, Jonathan},
-  year        = {2023},
-  month       = jul,
-  series      = {Proceedings of Machine Learning Research},
-  volume      = {202},
-  pages       = {32008--32032},
-  publisher   = {{PMLR}},
-  url         = {https://proceedings.mlr.press/v202/sitawarin23a.html},
-  abstract    = {Decision-based attacks construct adversarial examples against a machine learning (ML) model by making only hard-label queries. These attacks have mainly been applied directly to standalone neural networks. However, in practice, ML models are just one component of a larger learning system. We find that by adding a single preprocessor in front of a classifier, state-of-the-art query-based attacks are up to seven\texttimes{} less effective at attacking a prediction pipeline than at attacking the model alone. We explain this discrepancy by the fact that most preprocessors introduce some notion of invariance to the input space. Hence, attacks that are unaware of this invariance inevitably waste a large number of queries to re-discover or overcome it. We, therefore, develop techniques to (i) reverse-engineer the preprocessor and then (ii) use this extracted information to attack the end-to-end system. Our preprocessors extraction method requires only a few hundred queries, and our preprocessor-aware attacks recover the same efficacy as when attacking the model alone. The code can be found at https://github.com/google-research/preprocessor-aware-black-box-attack.},
-  copyright   = {All rights reserved},
-  code        = {https://github.com/google-research/preprocessor-aware-black-box-attack},
-  arxiv       = {2210.03297},
-  pdf         = {https://proceedings.mlr.press/v202/sitawarin23a.html},
-  preview     = {prep_attack_thumbnail.png},
-  bibtex_show = {true},
-  slides      = {preprocessor_attack_slides_icml2023.pdf},
-  poster      = {preprocessor_attack_poster_icml2023.pdf},
-  bibtex_show = {false},
-  talk        = {https://recorder-v3.slideslive.com/?share=83549&s=94c40a2b-dbe1-405e-a154-d14aa73cc73e}
-}
 
-@inproceedings{sitawarin_partbased_2023,
-  abbr        = {ICLR},
-  abstract    = {We show that combining human prior knowledge with end-to-end learning can improve the robustness of deep neural networks by introducing a part-based model for object classification. We believe that the richer form of annotation helps guide neural networks to learn more robust features without requiring more samples or larger models. Our model combines a part segmentation model with a tiny classifier and is trained end-to-end to simultaneously segment objects into parts and then classify the segmented object. Empirically, our part-based models achieve both higher accuracy and higher adversarial robustness than a ResNet-50 baseline on all three datasets. For instance, the clean accuracy of our part models is up to 15 percentage points higher than the baseline's, given the same level of robustness. Our experiments indicate that these models also reduce texture bias and yield better robustness against common corruptions and spurious correlations. The code is publicly available at https://github.com/chawins/adv-part-model.},
-  title       = {Part-Based Models Improve Adversarial Robustness},
-  booktitle   = {International Conference on Learning Representations},
-  author      = {Sitawarin, Chawin and Pongmala, Kornrapat and Chen, Yizheng and Carlini, Nicholas and Wagner, David},
-  year        = {2023},
-  copyright   = {All rights reserved},
-  url         = {https://openreview.net/forum?id=bAMTaeqluh4},
-  pdf         = {https://openreview.net/pdf?id=bAMTaeqluh4},
-  month       = may,
-  arxiv       = {2209.09117},
-  code        = {https://github.com/chawins/adv-part-model},
-  slides      = {part_model_slides_iclr2023.pdf},
-  bibtex_show = {false},
-  talk        = {https://recorder-v3.slideslive.com/?share=83549&s=94c40a2b-dbe1-405e-a154-d14aa73cc73e},
-  preview     = {part_model_thumbnail.png}
-}
 
 @inproceedings{sitawarin_robustness_2019,
   abbr        = {DLS},
@@ -382,24 +325,94 @@
   year        = {2021}
 }
 
-@inproceedings{xiang_short_2023,
-  abbr        = {VehicleSec},
-  title       = {Short: Certifiably Robust Perception against Adversarial Patch Attacks: A Survey},
-  booktitle   = {1st Symposium on {{Vehicle Security}} and {{Privacy}} ({{VehicleSec}})},
-  author      = {Xiang, Chong and Sitawarin, Chawin and Wu, Tong and Mittal, Prateek},
+@article{sitawarin_defending_2023,
+  title         = {Defending against Transfer Attacks from Public Models},
+  author        = {Sitawarin, Chawin and Chang{${*}$}, Jaewon and Huang{${*}$}, David and Altoyan, Wesson and Wagner, David},
+  year          = {2023},
+  month         = oct,
+  number        = {arXiv:2310.17645},
+  eprint        = {2310.17645},
+  primaryclass  = {cs},
+  publisher     = {{arXiv}},
+  url           = {http://arxiv.org/abs/2310.17645},
+  urldate       = {2023-10-27},
+  abstract      = {Adversarial attacks have been a looming and unaddressed threat in the industry. However, through a decade-long history of the robustness evaluation literature, we have learned that mounting a strong or optimal attack is challenging. It requires both machine learning and domain expertise. In other words, the white-box threat model, religiously assumed by a large majority of the past literature, is unrealistic. In this paper, we propose a new practical threat model where the adversary relies on transfer attacks through publicly available surrogate models. We argue that this setting will become the most prevalent for security-sensitive applications in the future. We evaluate the transfer attacks in this setting and propose a specialized defense method based on a game-theoretic perspective. The defenses are evaluated under 24 public models and 11 attack algorithms across three datasets (CIFAR-10, CIFAR-100, and ImageNet). Under this threat model, our defense, PubDef, outperforms the state-of-the-art white-box adversarial training by a large margin with almost no loss in the normal accuracy. For instance, on ImageNet, our defense achieves 62% accuracy under the strongest transfer attack vs only 36% of the best adversarially trained model. Its accuracy when not under attack is only 2% lower than that of an undefended model (78% vs 80%).},
+  archiveprefix = {arxiv},
+  keywords      = {Computer Science - Artificial Intelligence,Computer Science - Computer Vision and Pattern Recognition,Computer Science - Cryptography and Security,Computer Science - Machine Learning,notion},
+  code          = {https://github.com/wagner-group/pubdef},
+  bibtex_show   = {true},
+  abstract      = {Existing works have made great progress in improving adversarial robustness, but typically test their method only on data from the same distribution as the training data, i.e. in-distribution (ID) testing. As a result, it is unclear how such robustness generalizes under input distribution shifts, i.e. out-of-distribution (OOD) testing. This is a concerning omission as such distribution shifts are unavoidable when methods are deployed in the wild. To address this issue we propose a benchmark named OODRobustBench to comprehensively assess OOD adversarial robustness using 23 dataset-wise shifts (i.e. naturalistic shifts in input distribution) and 6 threat-wise shifts (i.e., unforeseen adversarial threat models). OODRobustBench is used to assess 706 robust models using 60.7K adversarial evaluations. This large-scale analysis shows that: 1) adversarial robustness suffers from a severe OOD generalization issue; 2) ID robustness correlates strongly with OOD robustness, in a positive linear way, under many distribution shifts. The latter enables the prediction of OOD robustness from ID robustness. Based on this, we are able to predict the upper limit of OOD robustness for existing robust training schemes. The results suggest that achieving OOD robustness requires designing novel methods beyond the conventional ones. Last, we discover that extra data, data augmentation, advanced model architectures and particular regularization approaches can improve OOD robustness. Noticeably, the discovered training schemes, compared to the baseline, exhibit dramatically higher robustness under threat shift while keeping high ID robustness, demonstrating new promising solutions for robustness against both multi-attack and unforeseen attacks.},
+  abbr          = {Preprint},
+  arxiv         = {2310.17645},
+  preview       = {pubdef_thumbnail.png},
+  journal       = {Under submission}
+}
+
+@article{li_oodrobustbench_2023,
+  title         = {{{OODRobustBench}}: Benchmarking and Analyzing Adversarial Robustness under Distribution Shift},
+  shorttitle    = {{{OODRobustBench}}},
+  author        = {Li, Lin and Wang, Yifei and Sitawarin, Chawin and Spratling, Michael},
+  year          = {2023},
+  month         = oct,
+  number        = {arXiv:2310.12793},
+  eprint        = {2310.12793},
+  primaryclass  = {cs},
+  publisher     = {{arXiv}},
+  url           = {http://arxiv.org/abs/2310.12793},
+  urldate       = {2023-10-24},
+  abstract      = {Existing works have made great progress in improving adversarial robustness, but typically test their method only on data from the same distribution as the training data, i.e. in-distribution (ID) testing. As a result, it is unclear how such robustness generalizes under input distribution shifts, i.e. out-of-distribution (OOD) testing. This is a concerning omission as such distribution shifts are unavoidable when methods are deployed in the wild. To address this issue we propose a benchmark named OODRobustBench to comprehensively assess OOD adversarial robustness using 23 dataset-wise shifts (i.e. naturalistic shifts in input distribution) and 6 threat-wise shifts (i.e., unforeseen adversarial threat models). OODRobustBench is used to assess 706 robust models using 60.7K adversarial evaluations. This large-scale analysis shows that: 1) adversarial robustness suffers from a severe OOD generalization issue; 2) ID robustness correlates strongly with OOD robustness, in a positive linear way, under many distribution shifts. The latter enables the prediction of OOD robustness from ID robustness. Based on this, we are able to predict the upper limit of OOD robustness for existing robust training schemes. The results suggest that achieving OOD robustness requires designing novel methods beyond the conventional ones. Last, we discover that extra data, data augmentation, advanced model architectures and particular regularization approaches can improve OOD robustness. Noticeably, the discovered training schemes, compared to the baseline, exhibit dramatically higher robustness under threat shift while keeping high ID robustness, demonstrating new promising solutions for robustness against both multi-attack and unforeseen attacks.},
+  archiveprefix = {arxiv},
+  copyright     = {Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC-BY-NC-SA)},
+  keywords      = {Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning,notion},
+  bibtex_show   = {true},
+  abstract      = {Existing works have made great progress in improving adversarial robustness, but typically test their method only on data from the same distribution as the training data, i.e. in-distribution (ID) testing. As a result, it is unclear how such robustness generalizes under input distribution shifts, i.e. out-of-distribution (OOD) testing. This is a concerning omission as such distribution shifts are unavoidable when methods are deployed in the wild. To address this issue we propose a benchmark named OODRobustBench to comprehensively assess OOD adversarial robustness using 23 dataset-wise shifts (i.e. naturalistic shifts in input distribution) and 6 threat-wise shifts (i.e., unforeseen adversarial threat models). OODRobustBench is used to assess 706 robust models using 60.7K adversarial evaluations. This large-scale analysis shows that: 1) adversarial robustness suffers from a severe OOD generalization issue; 2) ID robustness correlates strongly with OOD robustness, in a positive linear way, under many distribution shifts. The latter enables the prediction of OOD robustness from ID robustness. Based on this, we are able to predict the upper limit of OOD robustness for existing robust training schemes. The results suggest that achieving OOD robustness requires designing novel methods beyond the conventional ones. Last, we discover that extra data, data augmentation, advanced model architectures and particular regularization approaches can improve OOD robustness. Noticeably, the discovered training schemes, compared to the baseline, exhibit dramatically higher robustness under threat shift while keeping high ID robustness, demonstrating new promising solutions for robustness against both multi-attack and unforeseen attacks.},
+  abbr          = {Preprint},
+  arxiv         = {2310.12793},
+  preview       = {oodrobust_thumbnail.png},
+  journal       = {Under submission}
+}
+
+@inproceedings{hingun_reap_2023,
+  abbr         = {ICCV},
+  abstract     = {Machine learning models are known to be susceptible to adversarial perturbation. One famous attack is the adversarial patch, a sticker with a particularly crafted pattern that makes the model incorrectly predict the object it is placed on. This attack presents a critical threat to cyber-physical systems that rely on cameras such as autonomous cars. Despite the significance of the problem, conducting research in this setting has been difficult; evaluating attacks and defenses in the real world is exceptionally costly while synthetic data are unrealistic. In this work, we propose the REAP (REalistic Adversarial Patch) Benchmark, a digital benchmark that allows the user to evaluate patch attacks on real images, and under real-world conditions. Built on top of the Mapillary Vistas dataset, our benchmark contains over 14,000 traffic signs. Each sign is augmented with a pair of geometric and lighting transformations, which can be used to apply a digitally generated patch realistically onto the sign, while matching real-world conditions. Using our benchmark, we perform the first large-scale assessments of adversarial patch attacks under realistic conditions. Our experiments suggest that adversarial patch attacks may present a smaller threat than previously believed and that the success rate of an attack on simpler digital simulations is not predictive of its actual effectiveness in practice.},
+  author       = {Hingun{${*}$}, Nabeel and Sitawarin{${*}$}, Chawin and Li, Jerry and Wagner, David},
+  bibtex_show  = {true},
+  arxiv        = {2212.05680},
+  primaryclass = {cs},
+  title        = {REAP: A Large-Scale Realistic Adversarial Patch Benchmark},
+  booktitle    = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+  month        = {October},
+  year         = {2023},
+  pages        = {4640-4651},
+  code         = {https://github.com/wagner-group/reap-benchmark},
+  preview      = {reap_thumbnail.png},
+  poster       = {reap_poster_iccv2023.pdf}
+}
+
+@inproceedings{sitawarin_preprocessors_2023,
+  abbr        = {ICML},
+  title       = {Preprocessors Matter! {{Realistic}} Decision-Based Attacks on Machine Learning Systems},
+  booktitle   = {Proceedings of the 40th International Conference on Machine Learning},
+  author      = {Sitawarin, Chawin and Tram{\`e}r, Florian and Carlini, Nicholas},
+  editor      = {Krause, Andreas and Brunskill, Emma and Cho, Kyunghyun and Engelhardt, Barbara and Sabato, Sivan and Scarlett, Jonathan},
   year        = {2023},
-  month       = mar,
-  abstract    = {The physical-world adversarial patch attack poses a security threat to AI perception models in autonomous vehicles. To mitigate this threat, researchers have designed defenses with certifiable robustness. In this paper, we survey existing certifiably robust defenses and highlight core robustness techniques that are applicable to a variety of perception tasks, including classification, detection, and segmentation. We emphasize the unsolved problems in this space to guide future research, and call for attention and efforts from both academia and industry to robustify perception models in autonomous vehicles.},
+  month       = jul,
+  series      = {Proceedings of Machine Learning Research},
+  volume      = {202},
+  pages       = {32008--32032},
+  publisher   = {{PMLR}},
+  url         = {https://proceedings.mlr.press/v202/sitawarin23a.html},
+  abstract    = {Decision-based attacks construct adversarial examples against a machine learning (ML) model by making only hard-label queries. These attacks have mainly been applied directly to standalone neural networks. However, in practice, ML models are just one component of a larger learning system. We find that by adding a single preprocessor in front of a classifier, state-of-the-art query-based attacks are up to seven\texttimes{} less effective at attacking a prediction pipeline than at attacking the model alone. We explain this discrepancy by the fact that most preprocessors introduce some notion of invariance to the input space. Hence, attacks that are unaware of this invariance inevitably waste a large number of queries to re-discover or overcome it. We, therefore, develop techniques to (i) reverse-engineer the preprocessor and then (ii) use this extracted information to attack the end-to-end system. Our preprocessors extraction method requires only a few hundred queries, and our preprocessor-aware attacks recover the same efficacy as when attacking the model alone. The code can be found at https://github.com/google-research/preprocessor-aware-black-box-attack.},
   copyright   = {All rights reserved},
-  langid      = {english},
-  pdf         = {https://www.ndss-symposium.org/wp-content/uploads/2023/02/vehiclesec2023-23020-paper.pdf},
-  note        = {Co-located with {{NDSS}} 2023. Best Short/WIP Paper Award Runner-Up.},
+  code        = {https://github.com/google-research/preprocessor-aware-black-box-attack},
+  arxiv       = {2210.03297},
+  pdf         = {https://proceedings.mlr.press/v202/sitawarin23a.html},
+  preview     = {prep_attack_thumbnail.png},
+  bibtex_show = {true},
+  slides      = {preprocessor_attack_slides_icml2023.pdf},
+  poster      = {preprocessor_attack_poster_icml2023.pdf},
   bibtex_show = {false},
-  code        = {https://github.com/inspire-group/patch-defense-leaderboard},
-  poster      = {https://drive.google.com/file/d/1vPfkU0tPVQ-aBC_mEa_LsYZkmjPqyiEP/view},
-  slides      = {https://docs.google.com/presentation/d/1PEQrz8lD0Bzl6QCtBUzk2xULgsRgGRTm},
-  talk        = {https://drive.google.com/file/d/1XXZkufk2ueLvNl7QUlxevyeNeEDjI-70/view},
-  preview     = {patch_cert_survey_thumbnail.png}
+  talk        = {https://recorder-v3.slideslive.com/?share=83549&s=94c40a2b-dbe1-405e-a154-d14aa73cc73e}
 }
 
 @article{shah_spder_2023,
@@ -418,4 +431,44 @@
   arxiv         = {2306.15242},
   preview       = {spder_thumbnail.png},
   code          = {https://github.com/katop1234/SPDER/}
+}
+
+@inproceedings{sitawarin_partbased_2023,
+  abbr        = {ICLR},
+  abstract    = {We show that combining human prior knowledge with end-to-end learning can improve the robustness of deep neural networks by introducing a part-based model for object classification. We believe that the richer form of annotation helps guide neural networks to learn more robust features without requiring more samples or larger models. Our model combines a part segmentation model with a tiny classifier and is trained end-to-end to simultaneously segment objects into parts and then classify the segmented object. Empirically, our part-based models achieve both higher accuracy and higher adversarial robustness than a ResNet-50 baseline on all three datasets. For instance, the clean accuracy of our part models is up to 15 percentage points higher than the baseline's, given the same level of robustness. Our experiments indicate that these models also reduce texture bias and yield better robustness against common corruptions and spurious correlations. The code is publicly available at https://github.com/chawins/adv-part-model.},
+  title       = {Part-Based Models Improve Adversarial Robustness},
+  booktitle   = {International Conference on Learning Representations},
+  author      = {Sitawarin, Chawin and Pongmala, Kornrapat and Chen, Yizheng and Carlini, Nicholas and Wagner, David},
+  year        = {2023},
+  copyright   = {All rights reserved},
+  url         = {https://openreview.net/forum?id=bAMTaeqluh4},
+  pdf         = {https://openreview.net/pdf?id=bAMTaeqluh4},
+  month       = may,
+  arxiv       = {2209.09117},
+  code        = {https://github.com/chawins/adv-part-model},
+  slides      = {part_model_slides_iclr2023.pdf},
+  bibtex_show = {false},
+  talk        = {https://recorder-v3.slideslive.com/?share=83549&s=94c40a2b-dbe1-405e-a154-d14aa73cc73e},
+  preview     = {part_model_thumbnail.png}
+}
+
+@inproceedings{xiang_short_2023,
+  abbr        = {VehicleSec},
+  title       = {Short: Certifiably Robust Perception against Adversarial Patch Attacks: A Survey},
+  booktitle   = {1st Symposium on {{Vehicle Security}} and {{Privacy}} ({{VehicleSec}})},
+  author      = {Xiang, Chong and Sitawarin, Chawin and Wu, Tong and Mittal, Prateek},
+  year        = {2023},
+  month       = mar,
+  abstract    = {The physical-world adversarial patch attack poses a security threat to AI perception models in autonomous vehicles. To mitigate this threat, researchers have designed defenses with certifiable robustness. In this paper, we survey existing certifiably robust defenses and highlight core robustness techniques that are applicable to a variety of perception tasks, including classification, detection, and segmentation. We emphasize the unsolved problems in this space to guide future research, and call for attention and efforts from both academia and industry to robustify perception models in autonomous vehicles.},
+  copyright   = {All rights reserved},
+  langid      = {english},
+  pdf         = {https://www.ndss-symposium.org/wp-content/uploads/2023/02/vehiclesec2023-23020-paper.pdf},
+  note        = {Co-located with {{NDSS}} 2023. Best Short/WIP Paper Award Runner-Up.},
+  bibtex_show = {false},
+  code        = {https://github.com/inspire-group/patch-defense-leaderboard},
+  poster      = {https://drive.google.com/file/d/1vPfkU0tPVQ-aBC_mEa_LsYZkmjPqyiEP/view},
+  slides      = {https://docs.google.com/presentation/d/1PEQrz8lD0Bzl6QCtBUzk2xULgsRgGRTm},
+  talk        = {https://drive.google.com/file/d/1XXZkufk2ueLvNl7QUlxevyeNeEDjI-70/view},
+  preview     = {patch_cert_survey_thumbnail.png},
+  award       = {true}
 }
