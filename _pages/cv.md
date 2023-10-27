@@ -5,4 +5,6 @@ title: cv
 nav: false
 nav_order: 4
 cv_pdf: Chawin_Sitawarin_CV.pdf
+toc:
+  sidebar: left
 ---
