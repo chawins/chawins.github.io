@@ -42,10 +42,11 @@ I am extremely fortunate to have mentored and worked with lots of brilliant stud
 - [Jaewon Chang](https://www.linkedin.com/in/jaewon-chang-683918204/)
 - [Pranav Sheokand](https://www.linkedin.com/in/pranav-sheokand/)
 - [SooHyuk Cho](https://www.linkedin.com/in/soohyuk-cho/)
+- [Junsang Yoon](https://www.linkedin.com/in/junsang)
 
 ---
 
 ## academic services
 
-- Reviewer: ICML 2022 (Outstanding Reviewer) / BANDS (ICLR Workshop) 2023 / NeurIPS 2022, 2023
+- Reviewer: ICLR 2024 | ICML 2022 (Outstanding Reviewer) | NeurIPS 2022, 2023 | BANDS (ICLR Workshop) 2023
 - Program Committee: AISec 2022, 2023
