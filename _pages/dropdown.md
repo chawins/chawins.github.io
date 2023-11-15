@@ -9,6 +9,8 @@ children:
       permalink: /publications/
     - title: services
       permalink: /services/
+    - title: llm-sp
+      permalink: /llm-sp/
     # - title: projects
     #   permalink: /projects/
 ---

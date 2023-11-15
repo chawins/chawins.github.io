@@ -25,7 +25,7 @@ latest_posts: false  # includes a list of the newest posts
 
 [CV](/assets/pdf/Chawin_Sitawarin_CV.pdf) &nbsp;&nbsp;&nbsp;&nbsp; [Google Scholar](https://scholar.google.com/citations?hl=en&authuser=1&user=AxUAEQ4AAAAJ)
 
-**I am looking for a full-time researcher or a postdoc position (starting Spring 2024 or after) Please feel free to reach out!**
+<!-- **I am looking for a full-time researcher or a postdoc position (starting Spring 2024 or after) Please feel free to reach out!** -->
 
 Hello! My name is Chawin Sitawarin (ชวิน สีตวาริน).
 I am a PhD candidate in Computer Science at UC Berkeley, and I am a part of [the security group](https://security.cs.berkeley.edu/), [Berkeley Artificial Intelligence Research (BAIR)](https://bair.berkeley.edu/) and [Berkeley DeepDrive (BDD)](https://bdd-data.berkeley.edu/).
