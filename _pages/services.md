@@ -48,5 +48,10 @@ I am extremely fortunate to have mentored and worked with lots of brilliant stud
 
 ## academic services
 
-- Reviewer: ICLR 2024 | ICML 2022 (Outstanding Reviewer) | NeurIPS 2022, 2023 | BANDS (ICLR Workshop) 2023
-- Program Committee: AISec 2022, 2023
+- Reviewer
+  - ICLR: 2024
+  - ICML: 2022 (Outstanding Reviewer)
+  - NeurIPS: 2022, 2023
+  - BANDS (ICLR Workshop): 2023
+- Program Committee
+  - AISec: 2022, 2023
