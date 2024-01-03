@@ -50,7 +50,7 @@ I am extremely fortunate to have mentored and worked with lots of brilliant stud
 
 - Reviewer
   - ICLR: 2024
-  - ICML: 2022 (Outstanding Reviewer)
+  - ICML: 2022 (Outstanding Reviewer), 2024
   - NeurIPS: 2022, 2023
   - BANDS (ICLR Workshop): 2023
 - Program Committee

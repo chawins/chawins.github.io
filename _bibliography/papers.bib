@@ -1,6 +1,31 @@
 ---
 ---
 
+@article{piet_jatmo_2023,
+  title         = {Jatmo: Prompt Injection Defense by Task-Specific Finetuning},
+  shorttitle    = {Jatmo},
+  author        = {Piet{${*}$}, Julien and Alrashed{${*}$}, Maha and Sitawarin, Chawin and Chen, Sizhe and Wei, Zeming and Sun, Elizabeth and Alomair, Basel and Wagner, David},
+  year          = {2023},
+  month         = dec,
+  number        = {arXiv:2312.17673},
+  eprint        = {2312.17673},
+  primaryclass  = {cs},
+  publisher     = {{arXiv}},
+  url           = {http://arxiv.org/abs/2312.17673},
+  urldate       = {2024-01-03},
+  abstract      = {Large Language Models (LLMs) are attracting significant research attention due to their instruction-following abilities, allowing users and developers to leverage LLMs for a variety of tasks. However, LLMs are vulnerable to prompt-injection attacks: a class of attacks that hijack the model's instruction-following abilities, changing responses to prompts to undesired, possibly malicious ones. In this work, we introduce Jatmo, a method for generating task-specific models resilient to prompt-injection attacks. Jatmo leverages the fact that LLMs can only follow instructions once they have undergone instruction tuning. It harnesses a teacher instruction-tuned model to generate a task-specific dataset, which is then used to fine-tune a base model (i.e., a non-instruction-tuned model). Jatmo only needs a task prompt and a dataset of inputs for the task: it uses the teacher model to generate outputs. For situations with no pre-existing datasets, Jatmo can use a single example, or in some cases none at all, to produce a fully synthetic dataset. Our experiments on six tasks show that Jatmo models provide the same quality of outputs on their specific task as standard LLMs, while being resilient to prompt injections. The best attacks succeeded in less than 0.5\% of cases against our models, versus over 90\% success rate against GPT-3.5-Turbo. We release Jatmo at https://github.com/wagner-group/prompt-injection-defense.},
+  archiveprefix = {arxiv},
+  copyright     = {All rights reserved},
+  keywords      = {Computer Science - Artificial Intelligence,Computer Science - Computation and Language,Computer Science - Cryptography and Security},
+  bibtex_show   = {true},
+  code          = {https://github.com/wagner-group/prompt-injection-defense},
+  abbr          = {Preprint},
+  arxiv         = {2312.17673},
+  preview       = {jatmo_thumbnail.png},
+  journal       = {Under submission}
+}
+
+
 @inproceedings{bhagoji_enhancing_2018,
   abbr        = {CISS},
   abstract    = {We propose the use of data transformations as a defense against evasion attacks on ML classifiers. We present and investigate strategies for incorporating a variety of data transformations including dimensionality reduction via Principal Component Analysis and data "anti-whitening" to enhance the resilience of machine learning, targeting both the classification and the training phase. We empirically evaluate and demonstrate the feasibility of linear transformations of data as a defense mechanism against evasion attacks using multiple real-world datasets. Our key findings are that the defense is (i) effective against the best known evasion attacks from the literature, resulting in a two-fold increase in the resources required by a white-box adversary with knowledge of the defense for a successful attack, (ii) applicable across a range of ML classifiers, including Support Vector Machines and Deep Neural Networks, and (iii) generalizable to multiple application domains, including image classification and human activity classification.},
