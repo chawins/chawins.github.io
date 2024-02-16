@@ -1,31 +1,5 @@
 ---
 ---
-
-@article{piet_jatmo_2023,
-  title         = {Jatmo: Prompt Injection Defense by Task-Specific Finetuning},
-  shorttitle    = {Jatmo},
-  author        = {Piet{${*}$}, Julien and Alrashed{${*}$}, Maha and Sitawarin, Chawin and Chen, Sizhe and Wei, Zeming and Sun, Elizabeth and Alomair, Basel and Wagner, David},
-  year          = {2023},
-  month         = dec,
-  number        = {arXiv:2312.17673},
-  eprint        = {2312.17673},
-  primaryclass  = {cs},
-  publisher     = {{arXiv}},
-  url           = {http://arxiv.org/abs/2312.17673},
-  urldate       = {2024-01-03},
-  abstract      = {Large Language Models (LLMs) are attracting significant research attention due to their instruction-following abilities, allowing users and developers to leverage LLMs for a variety of tasks. However, LLMs are vulnerable to prompt-injection attacks: a class of attacks that hijack the model's instruction-following abilities, changing responses to prompts to undesired, possibly malicious ones. In this work, we introduce Jatmo, a method for generating task-specific models resilient to prompt-injection attacks. Jatmo leverages the fact that LLMs can only follow instructions once they have undergone instruction tuning. It harnesses a teacher instruction-tuned model to generate a task-specific dataset, which is then used to fine-tune a base model (i.e., a non-instruction-tuned model). Jatmo only needs a task prompt and a dataset of inputs for the task: it uses the teacher model to generate outputs. For situations with no pre-existing datasets, Jatmo can use a single example, or in some cases none at all, to produce a fully synthetic dataset. Our experiments on six tasks show that Jatmo models provide the same quality of outputs on their specific task as standard LLMs, while being resilient to prompt injections. The best attacks succeeded in less than 0.5\% of cases against our models, versus over 90\% success rate against GPT-3.5-Turbo. We release Jatmo at https://github.com/wagner-group/prompt-injection-defense.},
-  archiveprefix = {arxiv},
-  copyright     = {All rights reserved},
-  keywords      = {Computer Science - Artificial Intelligence,Computer Science - Computation and Language,Computer Science - Cryptography and Security},
-  bibtex_show   = {true},
-  code          = {https://github.com/wagner-group/prompt-injection-defense},
-  abbr          = {Preprint},
-  arxiv         = {2312.17673},
-  preview       = {jatmo_thumbnail.png},
-  journal       = {Under submission}
-}
-
-
 @inproceedings{bhagoji_enhancing_2018,
   abbr        = {CISS},
   abstract    = {We propose the use of data transformations as a defense against evasion attacks on ML classifiers. We present and investigate strategies for incorporating a variety of data transformations including dimensionality reduction via Principal Component Analysis and data "anti-whitening" to enhance the resilience of machine learning, targeting both the classification and the training phase. We empirically evaluate and demonstrate the feasibility of linear transformations of data as a defense mechanism against evasion attacks using multiple real-world datasets. Our key findings are that the defense is (i) effective against the best known evasion attacks from the literature, resulting in a two-fold increase in the resources required by a white-box adversary with knowledge of the defense for a successful attack, (ii) applicable across a range of ML classifiers, including Support Vector Machines and Deep Neural Networks, and (iii) generalizable to multiple application domains, including image classification and human activity classification.},
@@ -350,6 +324,30 @@
   year        = {2021}
 }
 
+@article{piet_jatmo_2023,
+  title         = {Jatmo: Prompt Injection Defense by Task-Specific Finetuning},
+  shorttitle    = {Jatmo},
+  author        = {Piet{${*}$}, Julien and Alrashed{${*}$}, Maha and Sitawarin, Chawin and Chen, Sizhe and Wei, Zeming and Sun, Elizabeth and Alomair, Basel and Wagner, David},
+  year          = {2023},
+  month         = dec,
+  number        = {arXiv:2312.17673},
+  eprint        = {2312.17673},
+  primaryclass  = {cs},
+  publisher     = {{arXiv}},
+  url           = {http://arxiv.org/abs/2312.17673},
+  urldate       = {2024-01-03},
+  abstract      = {Large Language Models (LLMs) are attracting significant research attention due to their instruction-following abilities, allowing users and developers to leverage LLMs for a variety of tasks. However, LLMs are vulnerable to prompt-injection attacks: a class of attacks that hijack the model's instruction-following abilities, changing responses to prompts to undesired, possibly malicious ones. In this work, we introduce Jatmo, a method for generating task-specific models resilient to prompt-injection attacks. Jatmo leverages the fact that LLMs can only follow instructions once they have undergone instruction tuning. It harnesses a teacher instruction-tuned model to generate a task-specific dataset, which is then used to fine-tune a base model (i.e., a non-instruction-tuned model). Jatmo only needs a task prompt and a dataset of inputs for the task: it uses the teacher model to generate outputs. For situations with no pre-existing datasets, Jatmo can use a single example, or in some cases none at all, to produce a fully synthetic dataset. Our experiments on six tasks show that Jatmo models provide the same quality of outputs on their specific task as standard LLMs, while being resilient to prompt injections. The best attacks succeeded in less than 0.5\% of cases against our models, versus over 90\% success rate against GPT-3.5-Turbo. We release Jatmo at https://github.com/wagner-group/prompt-injection-defense.},
+  archiveprefix = {arxiv},
+  copyright     = {All rights reserved},
+  keywords      = {Computer Science - Artificial Intelligence,Computer Science - Computation and Language,Computer Science - Cryptography and Security},
+  bibtex_show   = {true},
+  code          = {https://github.com/wagner-group/prompt-injection-defense},
+  abbr          = {Preprint},
+  arxiv         = {2312.17673},
+  preview       = {jatmo_thumbnail.png},
+  journal       = {Under submission}
+}
+
 @article{piet_mark_2023,
   title         = {Mark My Words: Analyzing and Evaluating Language Model Watermarks},
   shorttitle    = {Mark My Words},
@@ -373,30 +371,6 @@
   journal       = {Under submission},
   website       = {https://wagner-group.github.io/projects/markmywords/index.html},
   preview       = {markmywords_thumbnail.jpg}
-}
-
-@article{sitawarin_defending_2023,
-  title         = {Defending against Transfer Attacks from Public Models},
-  author        = {Sitawarin, Chawin and Chang{${*}$}, Jaewon and Huang{${*}$}, David and Altoyan, Wesson and Wagner, David},
-  year          = {2023},
-  month         = oct,
-  number        = {arXiv:2310.17645},
-  eprint        = {2310.17645},
-  primaryclass  = {cs},
-  publisher     = {{arXiv}},
-  url           = {http://arxiv.org/abs/2310.17645},
-  urldate       = {2023-10-27},
-  abstract      = {Adversarial attacks have been a looming and unaddressed threat in the industry. However, through a decade-long history of the robustness evaluation literature, we have learned that mounting a strong or optimal attack is challenging. It requires both machine learning and domain expertise. In other words, the white-box threat model, religiously assumed by a large majority of the past literature, is unrealistic. In this paper, we propose a new practical threat model where the adversary relies on transfer attacks through publicly available surrogate models. We argue that this setting will become the most prevalent for security-sensitive applications in the future. We evaluate the transfer attacks in this setting and propose a specialized defense method based on a game-theoretic perspective. The defenses are evaluated under 24 public models and 11 attack algorithms across three datasets (CIFAR-10, CIFAR-100, and ImageNet). Under this threat model, our defense, PubDef, outperforms the state-of-the-art white-box adversarial training by a large margin with almost no loss in the normal accuracy. For instance, on ImageNet, our defense achieves 62% accuracy under the strongest transfer attack vs only 36% of the best adversarially trained model. Its accuracy when not under attack is only 2% lower than that of an undefended model (78% vs 80%).},
-  archiveprefix = {arxiv},
-  keywords      = {Computer Science - Artificial Intelligence,Computer Science - Computer Vision and Pattern Recognition,Computer Science - Cryptography and Security,Computer Science - Machine Learning,notion},
-  code          = {https://github.com/wagner-group/pubdef},
-  bibtex_show   = {true},
-  abstract      = {Existing works have made great progress in improving adversarial robustness, but typically test their method only on data from the same distribution as the training data, i.e. in-distribution (ID) testing. As a result, it is unclear how such robustness generalizes under input distribution shifts, i.e. out-of-distribution (OOD) testing. This is a concerning omission as such distribution shifts are unavoidable when methods are deployed in the wild. To address this issue we propose a benchmark named OODRobustBench to comprehensively assess OOD adversarial robustness using 23 dataset-wise shifts (i.e. naturalistic shifts in input distribution) and 6 threat-wise shifts (i.e., unforeseen adversarial threat models). OODRobustBench is used to assess 706 robust models using 60.7K adversarial evaluations. This large-scale analysis shows that: 1) adversarial robustness suffers from a severe OOD generalization issue; 2) ID robustness correlates strongly with OOD robustness, in a positive linear way, under many distribution shifts. The latter enables the prediction of OOD robustness from ID robustness. Based on this, we are able to predict the upper limit of OOD robustness for existing robust training schemes. The results suggest that achieving OOD robustness requires designing novel methods beyond the conventional ones. Last, we discover that extra data, data augmentation, advanced model architectures and particular regularization approaches can improve OOD robustness. Noticeably, the discovered training schemes, compared to the baseline, exhibit dramatically higher robustness under threat shift while keeping high ID robustness, demonstrating new promising solutions for robustness against both multi-attack and unforeseen attacks.},
-  abbr          = {Preprint},
-  arxiv         = {2310.17645},
-  preview       = {pubdef_thumbnail.png},
-  journal       = {Under submission},
-  website       = {https://wagner-group.github.io/projects/pubdef/index.html}
 }
 
 @article{li_oodrobustbench_2023,
@@ -466,24 +440,6 @@
   talk        = {https://recorder-v3.slideslive.com/?share=83549&s=94c40a2b-dbe1-405e-a154-d14aa73cc73e}
 }
 
-@article{shah_spder_2023,
-  abbr          = {Preprint},
-  title         = {{{SPDER}}: Semiperiodic Damping-Enabled Object Representation},
-  abstract      = {We present a neural network architecture designed to naturally learn a positional embedding and overcome the spectral bias towards lower frequencies faced by conventional implicit neural representation networks. Our proposed architecture, SPDER, is a simple MLP that uses an activation function composed of a sinusoidal multiplied by a sublinear function, called the damping function. The sinusoidal enables the network to automatically learn the positional embedding of an input coordinate while the damping passes on the actual coordinate value by preventing it from being projected down to within a finite range of values. Our results indicate that SPDERs speed up training by 10x and converge to losses 1,500-50,000x lower than that of the state-of-the-art for image representation. SPDER is also state-of-the-art in audio representation. The superior representation capability allows SPDER to also excel on multiple downstream tasks such as image super-resolution and video frame interpolation. We provide intuition as to why SPDER significantly improves fitting compared to that of other INR methods while requiring no hyperparameter tuning or preprocessing.},
-  author        = {Shah, Kathan and Sitawarin, Chawin},
-  journal       = {Under submission},
-  year          = {2023},
-  month         = jun,
-  eprint        = {2306.15242},
-  primaryclass  = {cs.CV},
-  archiveprefix = {arxiv},
-  copyright     = {All rights reserved},
-  bibtex_show   = {true},
-  arxiv         = {2306.15242},
-  preview       = {spder_thumbnail.png},
-  code          = {https://github.com/katop1234/SPDER/}
-}
-
 @inproceedings{sitawarin_partbased_2023,
   abbr        = {ICLR},
   abstract    = {We show that combining human prior knowledge with end-to-end learning can improve the robustness of deep neural networks by introducing a part-based model for object classification. We believe that the richer form of annotation helps guide neural networks to learn more robust features without requiring more samples or larger models. Our model combines a part segmentation model with a tiny classifier and is trained end-to-end to simultaneously segment objects into parts and then classify the segmented object. Empirically, our part-based models achieve both higher accuracy and higher adversarial robustness than a ResNet-50 baseline on all three datasets. For instance, the clean accuracy of our part models is up to 15 percentage points higher than the baseline's, given the same level of robustness. Our experiments indicate that these models also reduce texture bias and yield better robustness against common corruptions and spurious correlations. The code is publicly available at https://github.com/chawins/adv-part-model.},
@@ -522,4 +478,64 @@
   talk        = {https://drive.google.com/file/d/1XXZkufk2ueLvNl7QUlxevyeNeEDjI-70/view},
   preview     = {patch_cert_survey_thumbnail.png},
   award       = {true}
+}
+
+@inproceedings{sitawarin_defending_2024,
+  title         = {Defending against Transfer Attacks from Public Models},
+  booktitle     = {The Twelfth International Conference on Learning Representations},
+  author        = {Sitawarin, Chawin and Chang{${*}$}, Jaewon and Huang{${*}$}, David and Altoyan, Wesson and Wagner, David},
+  year          = {2024},
+  month         = jan,
+  copyright     = {CC0 1.0 Universal Public Domain Dedication},
+  url           = {https://openreview.net/forum?id=Tvwf4Vsi5F},
+  abstract      = {Adversarial attacks have been a looming and unaddressed threat in the industry. However, through a decade-long history of the robustness evaluation literature, we have learned that mounting a strong or optimal attack is challenging. It requires both machine learning and domain expertise. In other words, the white-box threat model, religiously assumed by a large majority of the past literature, is unrealistic. In this paper, we propose a new practical threat model where the adversary relies on transfer attacks through publicly available surrogate models. We argue that this setting will become the most prevalent for security-sensitive applications in the future. We evaluate the transfer attacks in this setting and propose a specialized defense method based on a game-theoretic perspective. The defenses are evaluated under 24 public models and 11 attack algorithms across three datasets (CIFAR-10, CIFAR-100, and ImageNet). Under this threat model, our defense, PubDef, outperforms the state-of-the-art white-box adversarial training by a large margin with almost no loss in the normal accuracy. For instance, on ImageNet, our defense achieves 62% accuracy under the strongest transfer attack vs only 36% of the best adversarially trained model. Its accuracy when not under attack is only 2% lower than that of an undefended model (78% vs 80%).},
+  archiveprefix = {arxiv},
+  keywords      = {Computer Science - Artificial Intelligence,Computer Science - Computer Vision and Pattern Recognition,Computer Science - Cryptography and Security,Computer Science - Machine Learning,notion},
+  code          = {https://github.com/wagner-group/pubdef},
+  bibtex_show   = {true},
+  abstract      = {Existing works have made great progress in improving adversarial robustness, but typically test their method only on data from the same distribution as the training data, i.e. in-distribution (ID) testing. As a result, it is unclear how such robustness generalizes under input distribution shifts, i.e. out-of-distribution (OOD) testing. This is a concerning omission as such distribution shifts are unavoidable when methods are deployed in the wild. To address this issue we propose a benchmark named OODRobustBench to comprehensively assess OOD adversarial robustness using 23 dataset-wise shifts (i.e. naturalistic shifts in input distribution) and 6 threat-wise shifts (i.e., unforeseen adversarial threat models). OODRobustBench is used to assess 706 robust models using 60.7K adversarial evaluations. This large-scale analysis shows that: 1) adversarial robustness suffers from a severe OOD generalization issue; 2) ID robustness correlates strongly with OOD robustness, in a positive linear way, under many distribution shifts. The latter enables the prediction of OOD robustness from ID robustness. Based on this, we are able to predict the upper limit of OOD robustness for existing robust training schemes. The results suggest that achieving OOD robustness requires designing novel methods beyond the conventional ones. Last, we discover that extra data, data augmentation, advanced model architectures and particular regularization approaches can improve OOD robustness. Noticeably, the discovered training schemes, compared to the baseline, exhibit dramatically higher robustness under threat shift while keeping high ID robustness, demonstrating new promising solutions for robustness against both multi-attack and unforeseen attacks.},
+  abbr          = {ICLR},
+  arxiv         = {2310.17645},
+  preview       = {pubdef_thumbnail.png},
+  website       = {https://wagner-group.github.io/projects/pubdef/index.html}
+}
+
+@inproceedings{shah_spder_2024,
+  abbr        = {ICLR},
+  title       = {{{SPDER}}: Semiperiodic Damping-Enabled Object Representation},
+  booktitle   = {The Twelfth International Conference on Learning Representations},
+  abstract    = {We present a neural network architecture designed to naturally learn a positional embedding and overcome the spectral bias towards lower frequencies faced by conventional implicit neural representation networks. Our proposed architecture, SPDER, is a simple MLP that uses an activation function composed of a sinusoidal multiplied by a sublinear function, called the damping function. The sinusoidal enables the network to automatically learn the positional embedding of an input coordinate while the damping passes on the actual coordinate value by preventing it from being projected down to within a finite range of values. Our results indicate that SPDERs speed up training by 10x and converge to losses 1,500-50,000x lower than that of the state-of-the-art for image representation. SPDER is also state-of-the-art in audio representation. The superior representation capability allows SPDER to also excel on multiple downstream tasks such as image super-resolution and video frame interpolation. We provide intuition as to why SPDER significantly improves fitting compared to that of other INR methods while requiring no hyperparameter tuning or preprocessing.},
+  author      = {Shah, Kathan and Sitawarin, Chawin},
+  year        = {2024},
+  month       = jan,
+  copyright   = {All rights reserved},
+  bibtex_show = {true},
+  arxiv       = {2306.15242},
+  preview     = {spder_thumbnail.png},
+  code        = {https://github.com/katop1234/SPDER/},
+  url         = {https://openreview.net/forum?id=92btneN9Wm}
+}
+
+@article{sitawarin_pal_2024,
+  abbr          = {Preprint},
+  title         = {{{PAL}}: Proxy-Guided Black-Box Attack on Large Language Models},
+  shorttitle    = {{{PAL}}},
+  author        = {Sitawarin, Chawin and Mu, Norman and Wagner, David and Araujo, Alexandre},
+  year          = {2024},
+  month         = feb,
+  number        = {arXiv:2402.09674},
+  eprint        = {2402.09674},
+  primaryclass  = {cs},
+  publisher     = {{arXiv}},
+  url           = {http://arxiv.org/abs/2402.09674},
+  urldate       = {2024-02-16},
+  abstract      = {Large Language Models (LLMs) have surged in popularity in recent months, but they have demonstrated concerning capabilities to generate harmful content when manipulated. While techniques like safety fine-tuning aim to minimize harmful use, recent works have shown that LLMs remain vulnerable to attacks that elicit toxic responses. In this work, we introduce the Proxy-Guided Attack on LLMs (PAL), the first optimization-based attack on LLMs in a black-box query-only setting. In particular, it relies on a surrogate model to guide the optimization and a sophisticated loss designed for real-world LLM APIs. Our attack achieves 84\% attack success rate (ASR) on GPT-3.5-Turbo and 48\% on Llama-2-7B, compared to 4\% for the current state of the art. We also propose GCG++, an improvement to the GCG attack that reaches 94\% ASR on white-box Llama-2-7B, and the Random-Search Attack on LLMs (RAL), a strong but simple baseline for query-based attacks. We believe the techniques proposed in this work will enable more comprehensive safety testing of LLMs and, in the long term, the development of better security guardrails. The code can be found at https://github.com/chawins/pal.},
+  archiveprefix = {arxiv},
+  copyright     = {Creative Commons Attribution 4.0 International License (CC-BY)},
+  keywords      = {Computer Science - Artificial Intelligence,Computer Science - Computation and Language,Computer Science - Cryptography and Security,Computer Science - Machine Learning},
+  bibtex_show   = {false},
+  code          = {https://github.com/chawins/pal},
+  arxiv         = {2402.09674},
+  journal       = {Under submission},
+  preview       = {pal_thumbnail.png}
 }
