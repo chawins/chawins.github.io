@@ -2,40 +2,25 @@
 layout: about
 title: about
 permalink: /
-subtitle: chawins AT berkeley DOT edu
+subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
 
 profile:
   align: right
-  image: profile_pic2.jpg
+  image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
-  address: >
-# <p>According to convnextv2, I am</p>
-# <p>"cardigan": 75.6%</p>
-# <p>"jean": 2.0%</p>
-# <p>"sunglasses": 1.0%</p>
-# <p>How I see myself</p>
-# <p>"giant panda": 100,000%</p>
-# <p>(he/him)</p>
+  more_info: >
+    <p>555 your office number</p>
+    <p>123 your address street</p>
+    <p>Your City, State 12345</p>
 
-news: false  # includes a list of news items
-selected_papers: false # includes a list of papers marked as "selected={true}"
-social: false  # includes social icons at the bottom of the page
-latest_posts: false  # includes a list of the newest posts
+news: true # includes a list of news items
+latest_posts: true # includes a list of the newest posts
+selected_papers: true # includes a list of papers marked as "selected={true}"
+social: true # includes social icons at the bottom of the page
 ---
 
-[CV](/assets/pdf/Chawin_Sitawarin_CV.pdf) &nbsp;&nbsp;&nbsp;&nbsp; [Google Scholar](https://scholar.google.com/citations?hl=en&authuser=1&user=AxUAEQ4AAAAJ)
+Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
-<!-- **I am looking for a full-time researcher or a postdoc position (starting Spring 2024 or after) Please feel free to reach out!** -->
+Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
 
-Hello! My name is Chawin Sitawarin (ชวิน สีตวาริน).
-I am a PhD candidate in Computer Science at UC Berkeley, and I am a part of [the security group](https://security.cs.berkeley.edu/), [Berkeley Artificial Intelligence Research (BAIR)](https://bair.berkeley.edu/) and [Berkeley DeepDrive (BDD)](https://bdd-data.berkeley.edu/).
-My advisor is [Prof. David Wagner](https://people.eecs.berkeley.edu/~daw/).
-I have also spent some time at IBM Research, Nokia Bell Labs, and Google Research.
-
-I am broadly interested in the security and safety aspects of machine learning. Most of my previous works are in the domain of adversarial machine learning, particularly adversarial examples and robustness of machine learning algorithms.
-More recently, I am interested in large language models both as a target for new kinds of attacks and as a security-enhancing tool.
-<!-- If you are wondering why I appear as a panda, give this [paper](https://arxiv.org/pdf/1412.6572.pdf) a read. -->
-
-Previously, I graduated from Princeton University in 2018 where I was very fortunate to be advised by [Prof. Prateek Mittal](https://www.princeton.edu/~pmittal/), [Prof. Peter Ramadge](http://faculty.ee.princeton.edu/ramadge/doku.html), and [Prof. Alejandro Rodriguez](http://faculty.ee.princeton.edu/arodriguez/). I was mentored and introduced to adversarial machine learning by [Arjun Bhagoji](https://arjunbhagoji.github.io/).
-
-I used to keep track of papers on adversarial examples, but I stopped after the number of papers has become overwhelming. You can still find the list [here](https://github.com/chawins/Adversarial-Examples-Reading-List) (last update: Sep 2019).
+Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
