@@ -51,3 +51,7 @@
 
 "CISS":
   color: "#1f5e96"
+
+"ESORICS":
+  url: https://esorics2024.org/
+  color: "#1f5e96"

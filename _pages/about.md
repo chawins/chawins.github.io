@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: chawins AT berkeley DOT edu
+subtitle: firstname.lastname@gmail.com
 
 profile:
   align: right
@@ -28,14 +28,15 @@ latest_posts: false  # includes a list of the newest posts
 <!-- **I am looking for a full-time researcher or a postdoc position (starting Spring 2024 or after) Please feel free to reach out!** -->
 
 Hello! My name is Chawin Sitawarin (ชวิน สีตวาริน).
-I am a PhD candidate in Computer Science at UC Berkeley, and I am a part of [the security group](https://security.cs.berkeley.edu/), [Berkeley Artificial Intelligence Research (BAIR)](https://bair.berkeley.edu/) and [Berkeley DeepDrive (BDD)](https://bdd-data.berkeley.edu/).
-My advisor is [Prof. David Wagner](https://people.eecs.berkeley.edu/~daw/).
+I am a postdoctoral researcher in the Privacy-Preserving Machine Learning team at Meta.
+
+I am broadly interested in security and privacy aspects of machine learning with a recent focus on large language models. Most of my past works are in the domain of adversarial machine learning, particularly adversarial examples and robustness of machine learning algorithms.
+
+I obtained my PhD degree in Computer Science from UC Berkeley where I was a part of [the security group](https://security.cs.berkeley.edu/), [Berkeley Artificial Intelligence Research (BAIR)](https://bair.berkeley.edu/) and [Berkeley DeepDrive (BDD)](https://bdd-data.berkeley.edu/).
+My advisor was [Prof. David Wagner](https://people.eecs.berkeley.edu/~daw/).
 I have also spent some time at IBM Research, Nokia Bell Labs, and Google Research.
 
-I am broadly interested in the security and safety aspects of machine learning. Most of my previous works are in the domain of adversarial machine learning, particularly adversarial examples and robustness of machine learning algorithms.
-More recently, I am interested in large language models both as a target for new kinds of attacks and as a security-enhancing tool.
-<!-- If you are wondering why I appear as a panda, give this [paper](https://arxiv.org/pdf/1412.6572.pdf) a read. -->
+<!-- Previously, I graduated from Princeton University in 2018 where I was very fortunate to be advised by [Prof. Prateek Mittal](https://www.princeton.edu/~pmittal/), [Prof. Peter Ramadge](http://faculty.ee.princeton.edu/ramadge/doku.html), and [Prof. Alejandro Rodriguez](http://faculty.ee.princeton.edu/arodriguez/). I was mentored and introduced to adversarial machine learning by [Arjun Bhagoji](https://arjunbhagoji.github.io/). -->
 
-Previously, I graduated from Princeton University in 2018 where I was very fortunate to be advised by [Prof. Prateek Mittal](https://www.princeton.edu/~pmittal/), [Prof. Peter Ramadge](http://faculty.ee.princeton.edu/ramadge/doku.html), and [Prof. Alejandro Rodriguez](http://faculty.ee.princeton.edu/arodriguez/). I was mentored and introduced to adversarial machine learning by [Arjun Bhagoji](https://arjunbhagoji.github.io/).
-
-I used to keep track of papers on adversarial examples, but I stopped after the number of papers has become overwhelming. You can still find the list [here](https://github.com/chawins/Adversarial-Examples-Reading-List) (last update: Sep 2019).
+- I maintain a list of publications on security and privacy of large language models at [llm-sp](https://github.com/chawins/llm-sp).
+- I used to keep track of papers on adversarial examples, but I stopped after the number of papers has become overwhelming. You can still find the list [here](https://github.com/chawins/Adversarial-Examples-Reading-List) (last update: Sep 2019).
