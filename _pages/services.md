@@ -6,21 +6,29 @@ nav: true
 nav_order: 5
 ---
 
-## teaching
+### teaching
 
-- [TA] **Introduction to Machine Learning** (UC Berkeley): Fall 2020, Spring 2023
-- [Lab TA] **Contemporary Logic Design** (Princeton University): Fall 2016
-- [Grader] **Information Security** (Princeton University): Fall 2016
-- [Grader] **Algorithms and Data Structures** (Princeton University): Spring 2016
-- [Grader] **General Computer Science** (Princeton University): Fall 2015
+TA
 
-#### notes
+- **Introduction to Machine Learning** (UC Berkeley): Fall 2020, Spring 2023 (Outstanding Graduate Student Instructor Award)
+
+Lab TA
+
+- **Contemporary Logic Design** (Princeton University): Fall 2016
+
+Grader
+
+- **Information Security** (Princeton University): Fall 2016
+- **Algorithms and Data Structures** (Princeton University): Spring 2016
+- **General Computer Science** (Princeton University): Fall 2015
+
+#### lecture notes
 
 - Mini-lecture notes from **Introduction to Machine Learning** course: [link](https://github.com/chawins/cs189_spring2023_notes/)
 
 ---
 
-## student mentees/collaborators
+### student mentees/collaborators
 
 I am extremely fortunate to have mentored and worked with lots of brilliant students. Please feel free to reach out if you are interested in collaborating!
 
@@ -43,15 +51,19 @@ I am extremely fortunate to have mentored and worked with lots of brilliant stud
 - [Pranav Sheokand](https://www.linkedin.com/in/pranav-sheokand/)
 - [SooHyuk Cho](https://www.linkedin.com/in/soohyuk-cho/)
 - [Junsang Yoon](https://www.linkedin.com/in/junsang)
+- [Avidan Shah](https://www.linkedin.com/in/avidan-shah-7a9893284/)
 
 ---
 
-## academic services
+### academic services
 
-- Reviewer
-  - ICLR: 2024
-  - ICML: 2022 (Outstanding Reviewer), 2024
-  - NeurIPS: 2022, 2023
-  - BANDS (ICLR Workshop): 2023
-- Program Committee
-  - AISec: 2022, 2023
+#### reviewer
+
+- ICLR: 2024
+- ICML: 2022 (Outstanding Reviewer), 2024
+- NeurIPS: 2022, 2023
+- BANDS (ICLR Workshop): 2023
+
+#### program committee
+
+- AISec: 2022, 2023

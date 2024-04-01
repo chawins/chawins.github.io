@@ -456,6 +456,29 @@
   award       = {true}
 }
 
+@article{ding_vulnerability_2024,
+  abbr          = {Preprint},
+  title         = {Vulnerability Detection with Code Language Models: How Far Are We?},
+  shorttitle    = {Vulnerability Detection with Code Language Models},
+  author        = {Ding, Yangruibo and Fu, Yanjun and Ibrahim, Omniyyah and Sitawarin, Chawin and Chen, Xinyun and Alomair, Basel and Wagner, David and Ray, Baishakhi and Chen, Yizheng},
+  year          = {2024},
+  month         = mar,
+  number        = {arXiv:2403.18624},
+  eprint        = {2403.18624},
+  primaryclass  = {cs},
+  publisher     = {arXiv},
+  url           = {http://arxiv.org/abs/2403.18624},
+  urldate       = {2024-03-31},
+  abstract      = {In the context of the rising interest in code language models (code LMs) and vulnerability detection, we study the effectiveness of code LMs for detecting vulnerabilities. Our analysis reveals significant shortcomings in existing vulnerability datasets, including poor data quality, low label accuracy, and high duplication rates, leading to unreliable model performance in realistic vulnerability detection scenarios. Additionally, the evaluation methods used with these datasets are not representative of real-world vulnerability detection. To address these challenges, we introduce PrimeVul, a new dataset for training and evaluating code LMs for vulnerability detection. PrimeVul incorporates a novel set of data labeling techniques that achieve comparable label accuracy to human-verified benchmarks while significantly expanding the dataset. It also implements a rigorous data de-duplication and chronological data splitting strategy to mitigate data leakage issues, alongside introducing more realistic evaluation metrics and settings. This comprehensive approach aims to provide a more accurate assessment of code LMs' performance in real-world conditions. Evaluating code LMs on PrimeVul reveals that existing benchmarks significantly overestimate the performance of these models. For instance, a state-of-the-art 7B model scored 68.26\% F1 on BigVul but only 3.09\% F1 on PrimeVul. Attempts to improve performance through advanced training techniques and larger models like GPT-3.5 and GPT-4 were unsuccessful, with results akin to random guessing in the most stringent settings. These findings underscore the considerable gap between current capabilities and the practical requirements for deploying code LMs in security roles, highlighting the need for more innovative research in this domain.},
+  archiveprefix = {arxiv},
+  copyright     = {All rights reserved},
+  keywords      = {Computer Science - Computation and Language,Computer Science - Software Engineering},
+  bibtex_show   = {true},
+  arxiv         = {2403.18624},
+  journal       = {Under submission},
+  preview       = {primevul_thumbnail.png}
+}
+
 @inproceedings{piet_jatmo_2024,
   abbr        = {ESORICS},
   title       = {Jatmo: Prompt Injection Defense by Task-Specific Finetuning},
@@ -522,7 +545,7 @@
 }
 
 @inproceedings{sitawarin_defending_2024,
-  title         = {Defending against Transfer Attacks from Public Models},
+  title         = {PubDef: Defending against Transfer Attacks from Public Models},
   booktitle     = {The Twelfth International Conference on Learning Representations},
   author        = {Sitawarin, Chawin and Chang{${*}$}, Jaewon and Huang{${*}$}, David and Altoyan, Wesson and Wagner, David},
   year          = {2024},
