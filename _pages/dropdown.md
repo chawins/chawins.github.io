@@ -5,12 +5,12 @@ nav: true
 nav_order: 8
 dropdown: true
 children:
-    - title: publications
-      permalink: /publications/
-    - title: services
-      permalink: /services/
-    - title: llm-sp
-      permalink: /llm-sp/
-    # - title: projects
-    #   permalink: /projects/
+  - title: publications
+    permalink: /publications/
+  - title: divider
+  - title: projects
+    permalink: /projects/
+  - title: divider
+  - title: blog
+    permalink: /blog/
 ---
