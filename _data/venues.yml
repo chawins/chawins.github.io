@@ -10,6 +10,7 @@
   color: "#b31b1b"
 
 "Workshop":
+  url: https://neurips.cc/
   color: "#609966"
 
 "ICCV":
@@ -41,15 +42,19 @@
   color: "#609966"
 
 "CLEO":
+  url: https://www.cleoconference.org/
   color: "#1f5e96"
 
 "Photon. Res.":
+  url: https://opg.optica.org/prj/home.cfm
   color: "#1f5e96"
 
 "CCS":
+  url: https://www.sigsac.org/ccs/CCS2024/
   color: "#1f5e96"
 
 "CISS":
+  url: https://www.itsoc.org/event/58th-annual-conference-information-sciences-and-systems-ciss
   color: "#1f5e96"
 
 "ESORICS":
@@ -57,7 +62,9 @@
   color: "#1f5e96"
 
 "USENIX Security":
+  url: https://www.usenix.org/conference/usenixsecurity25
   color: "#1f5e96"
 
 "ICSE":
+  url: https://conf.researchr.org/home/icse-2025
   color: "#1f5e96"
