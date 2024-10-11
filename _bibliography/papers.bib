@@ -208,7 +208,9 @@
   title       = {Inverse-designed photonic fibers and metasurfaces for nonlinear frequency conversion (Invited)},
   url         = {http://www.osapublishing.org/prj/abstract.cfm?URI=prj-6-5-B82},
   volume      = {6},
-  year        = {2018}
+  year        = {2018},
+  pdf         = {https://opg.optica.org/prj/fulltext.cfm?uri=prj-6-5-B82&id=385779},
+  preview     = {photores_thumbnail.png}
 }
 
 @inproceedings{sitawarin_minimumnorm_2020,
@@ -329,55 +331,6 @@
   preview     = {mitigating_thumbnail.png}
 }
 
-@article{piet_mark_2023,
-  title         = {Mark My Words: Analyzing and Evaluating Language Model Watermarks},
-  shorttitle    = {Mark My Words},
-  author        = {Piet, Julien and Sitawarin, Chawin and Fang, Vivian and Mu, Norman and Wagner, David},
-  year          = {2023},
-  month         = nov,
-  number        = {arXiv:2312.00273},
-  eprint        = {2312.00273},
-  primaryclass  = {cs},
-  publisher     = {{arXiv}},
-  url           = {http://arxiv.org/abs/2312.00273},
-  urldate       = {2023-12-04},
-  abstract      = {The capabilities of large language models have grown significantly in recent years and so too have concerns about their misuse. In this context, the ability to distinguish machine-generated text from human-authored content becomes important. Prior works have proposed numerous schemes to watermark text, which would benefit from a systematic evaluation framework. This work focuses on text watermarking techniques - as opposed to image watermarks - and proposes a comprehensive benchmark for them under different tasks as well as practical attacks. We focus on three main metrics: quality, size (e.g. the number of tokens needed to detect a watermark), and tamper-resistance. Current watermarking techniques are good enough to be deployed: Kirchenbauer et al. can watermark Llama2-7B-chat with no perceivable loss in quality in under 100 tokens, and with good tamper-resistance to simple attacks, regardless of temperature. We argue that watermark indistinguishability is too strong a requirement: schemes that slightly modify logit distributions outperform their indistinguishable counterparts with no noticeable loss in generation quality. We publicly release our benchmark.},
-  archiveprefix = {arxiv},
-  copyright     = {All rights reserved},
-  keywords      = {Computer Science - Artificial Intelligence,Computer Science - Computation and Language,Computer Science - Cryptography and Security},
-  arxiv         = {2312.00273},
-  code          = {https://github.com/wagner-group/MarkMyWords},
-  bibtex_show   = {true},
-  abbr          = {Preprint},
-  journal       = {Under submission},
-  website       = {https://wagner-group.github.io/projects/markmywords/index.html},
-  preview       = {markmywords_thumbnail.jpg}
-}
-
-@article{li_oodrobustbench_2023,
-  title         = {{{OODRobustBench}}: Benchmarking and Analyzing Adversarial Robustness under Distribution Shift},
-  shorttitle    = {{{OODRobustBench}}},
-  author        = {Li, Lin and Wang, Yifei and Sitawarin, Chawin and Spratling, Michael},
-  year          = {2023},
-  month         = oct,
-  number        = {arXiv:2310.12793},
-  eprint        = {2310.12793},
-  primaryclass  = {cs},
-  publisher     = {{arXiv}},
-  url           = {http://arxiv.org/abs/2310.12793},
-  urldate       = {2023-10-24},
-  abstract      = {Existing works have made great progress in improving adversarial robustness, but typically test their method only on data from the same distribution as the training data, i.e. in-distribution (ID) testing. As a result, it is unclear how such robustness generalizes under input distribution shifts, i.e. out-of-distribution (OOD) testing. This is a concerning omission as such distribution shifts are unavoidable when methods are deployed in the wild. To address this issue we propose a benchmark named OODRobustBench to comprehensively assess OOD adversarial robustness using 23 dataset-wise shifts (i.e. naturalistic shifts in input distribution) and 6 threat-wise shifts (i.e., unforeseen adversarial threat models). OODRobustBench is used to assess 706 robust models using 60.7K adversarial evaluations. This large-scale analysis shows that: 1) adversarial robustness suffers from a severe OOD generalization issue; 2) ID robustness correlates strongly with OOD robustness, in a positive linear way, under many distribution shifts. The latter enables the prediction of OOD robustness from ID robustness. Based on this, we are able to predict the upper limit of OOD robustness for existing robust training schemes. The results suggest that achieving OOD robustness requires designing novel methods beyond the conventional ones. Last, we discover that extra data, data augmentation, advanced model architectures and particular regularization approaches can improve OOD robustness. Noticeably, the discovered training schemes, compared to the baseline, exhibit dramatically higher robustness under threat shift while keeping high ID robustness, demonstrating new promising solutions for robustness against both multi-attack and unforeseen attacks.},
-  archiveprefix = {arxiv},
-  copyright     = {Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC-BY-NC-SA)},
-  keywords      = {Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning,notion},
-  bibtex_show   = {true},
-  abstract      = {Existing works have made great progress in improving adversarial robustness, but typically test their method only on data from the same distribution as the training data, i.e. in-distribution (ID) testing. As a result, it is unclear how such robustness generalizes under input distribution shifts, i.e. out-of-distribution (OOD) testing. This is a concerning omission as such distribution shifts are unavoidable when methods are deployed in the wild. To address this issue we propose a benchmark named OODRobustBench to comprehensively assess OOD adversarial robustness using 23 dataset-wise shifts (i.e. naturalistic shifts in input distribution) and 6 threat-wise shifts (i.e., unforeseen adversarial threat models). OODRobustBench is used to assess 706 robust models using 60.7K adversarial evaluations. This large-scale analysis shows that: 1) adversarial robustness suffers from a severe OOD generalization issue; 2) ID robustness correlates strongly with OOD robustness, in a positive linear way, under many distribution shifts. The latter enables the prediction of OOD robustness from ID robustness. Based on this, we are able to predict the upper limit of OOD robustness for existing robust training schemes. The results suggest that achieving OOD robustness requires designing novel methods beyond the conventional ones. Last, we discover that extra data, data augmentation, advanced model architectures and particular regularization approaches can improve OOD robustness. Noticeably, the discovered training schemes, compared to the baseline, exhibit dramatically higher robustness under threat shift while keeping high ID robustness, demonstrating new promising solutions for robustness against both multi-attack and unforeseen attacks.},
-  abbr          = {Preprint},
-  arxiv         = {2310.12793},
-  preview       = {oodrobust_thumbnail.png},
-  journal       = {Under submission}
-}
-
 @inproceedings{hingun_reap_2023,
   abbr         = {ICCV},
   abstract     = {Machine learning models are known to be susceptible to adversarial perturbation. One famous attack is the adversarial patch, a sticker with a particularly crafted pattern that makes the model incorrectly predict the object it is placed on. This attack presents a critical threat to cyber-physical systems that rely on cameras such as autonomous cars. Despite the significance of the problem, conducting research in this setting has been difficult; evaluating attacks and defenses in the real world is exceptionally costly while synthetic data are unrealistic. In this work, we propose the REAP (REalistic Adversarial Patch) Benchmark, a digital benchmark that allows the user to evaluate patch attacks on real images, and under real-world conditions. Built on top of the Mapillary Vistas dataset, our benchmark contains over 14,000 traffic signs. Each sign is augmented with a pair of geometric and lighting transformations, which can be used to apply a digitally generated patch realistically onto the sign, while matching real-world conditions. Using our benchmark, we perform the first large-scale assessments of adversarial patch attacks under realistic conditions. Our experiments suggest that adversarial patch attacks may present a smaller threat than previously believed and that the success rate of an attack on simpler digital simulations is not predictive of its actual effectiveness in practice.},
@@ -461,28 +414,74 @@
   award       = {true}
 }
 
-@article{ding_vulnerability_2024,
-  abbr          = {Preprint},
-  title         = {Vulnerability Detection with Code Language Models: How Far Are We?},
-  shorttitle    = {Vulnerability Detection with Code Language Models},
-  author        = {Ding, Yangruibo and Fu, Yanjun and Ibrahim, Omniyyah and Sitawarin, Chawin and Chen, Xinyun and Alomair, Basel and Wagner, David and Ray, Baishakhi and Chen, Yizheng},
-  year          = {2024},
-  month         = mar,
-  number        = {arXiv:2403.18624},
-  eprint        = {2403.18624},
-  primaryclass  = {cs},
-  publisher     = {arXiv},
-  url           = {http://arxiv.org/abs/2403.18624},
-  urldate       = {2024-03-31},
-  abstract      = {In the context of the rising interest in code language models (code LMs) and vulnerability detection, we study the effectiveness of code LMs for detecting vulnerabilities. Our analysis reveals significant shortcomings in existing vulnerability datasets, including poor data quality, low label accuracy, and high duplication rates, leading to unreliable model performance in realistic vulnerability detection scenarios. Additionally, the evaluation methods used with these datasets are not representative of real-world vulnerability detection. To address these challenges, we introduce PrimeVul, a new dataset for training and evaluating code LMs for vulnerability detection. PrimeVul incorporates a novel set of data labeling techniques that achieve comparable label accuracy to human-verified benchmarks while significantly expanding the dataset. It also implements a rigorous data de-duplication and chronological data splitting strategy to mitigate data leakage issues, alongside introducing more realistic evaluation metrics and settings. This comprehensive approach aims to provide a more accurate assessment of code LMs' performance in real-world conditions. Evaluating code LMs on PrimeVul reveals that existing benchmarks significantly overestimate the performance of these models. For instance, a state-of-the-art 7B model scored 68.26\% F1 on BigVul but only 3.09\% F1 on PrimeVul. Attempts to improve performance through advanced training techniques and larger models like GPT-3.5 and GPT-4 were unsuccessful, with results akin to random guessing in the most stringent settings. These findings underscore the considerable gap between current capabilities and the practical requirements for deploying code LMs in security roles, highlighting the need for more innovative research in this domain.},
-  archiveprefix = {arxiv},
-  copyright     = {All rights reserved},
-  keywords      = {Computer Science - Computation and Language,Computer Science - Software Engineering},
-  bibtex_show   = {true},
-  arxiv         = {2403.18624},
-  code          = {https://github.com/dlvuldet/primevul},
-  journal       = {Under submission},
-  preview       = {primevul_thumbnail.png}
+@inproceedings{piet_markmywords_2024,
+  abbr        = {Workshop},
+  title       = {{{MarkMyWords}}: {{Analyzing}} and Evaluating Language Model Watermarks},
+  booktitle   = {Statistical Foundations of Llms and Foundation Models ({{NeurIPS}} 2024 Workshop)},
+  author      = {Piet, Julien and Sitawarin, Chawin and Fang, Vivian and Mu, Norman and Wagner, David},
+  year        = {2024},
+  month       = oct,
+  url         = {https://openreview.net/forum?id=lZJCtOWdoU},
+  keywords    = {Benchmark,LLM,Watermark},
+  abstract      = {The capabilities of large language models have grown significantly in recent years and so too have concerns about their misuse. In this context, the ability to distinguish machine-generated text from human-authored content becomes important. Prior works have proposed numerous schemes to watermark text, which would benefit from a systematic evaluation framework. This work focuses on text watermarking techniques - as opposed to image watermarks - and proposes a comprehensive benchmark for them under different tasks as well as practical attacks. We focus on three main metrics: quality, size (e.g. the number of tokens needed to detect a watermark), and tamper-resistance. Current watermarking techniques are good enough to be deployed: Kirchenbauer et al. can watermark Llama2-7B-chat with no perceivable loss in quality in under 100 tokens, and with good tamper-resistance to simple attacks, regardless of temperature. We argue that watermark indistinguishability is too strong a requirement: schemes that slightly modify logit distributions outperform their indistinguishable counterparts with no noticeable loss in generation quality. We publicly release our benchmark.},
+  arxiv       = {2312.00273},
+  code        = {https://github.com/wagner-group/MarkMyWords},
+  bibtex_show = {true},
+  website     = {https://wagner-group.github.io/projects/markmywords/index.html},
+  preview     = {markmywords_thumbnail.jpg}
+}
+
+@inproceedings{chen_struq_2024,
+  abbr        = {USENIX Security},
+  title       = {{{StruQ}}: Defending against Prompt Injection with Structured Queries},
+  booktitle   = {34th {{USENIX}} Security Symposium ({{USENIX}} Security 25)},
+  author      = {Chen, Sizhe and Piet, Julien and Sitawarin, Chawin and Wagner, David},
+  year        = {2024},
+  month       = feb,
+  abstract    = {Recent advances in Large Language Models (LLMs) enable exciting LLM-integrated applications, which perform text-based tasks by utilizing their advanced language understanding capabilities. However, as LLMs have improved, so have the attacks against them. Prompt injection attacks are an important threat: they trick the model to deviate from the original application's instructions and instead follow user directives. These attacks rely on the LLM's ability to follow instructions and inability to separate the prompts and user data. We introduce structured queries, a general approach to tackle this problem. Structured queries separate prompts and data into two channels. We implement a system that supports structured queries. This system is made of (1) a secure front-end that formats a prompt and user data into a special format, and (2) a specially trained LLM that can produce high-quality outputs from these inputs. The LLM is trained using a novel fine-tuning strategy: we convert a base (non-instruction-tuned) LLM to a structured instruction-tuned model that will only follow instructions in the prompt portion of a query. To do so, we augment standard instruction tuning datasets with examples that also include instructions in the data portion of the query, and fine-tune the model to ignore these. Our system significantly improves resistance to prompt injection attacks, with little or no impact on utility. Our code is released at https://github.com/Sizhe-Chen/PromptInjectionDefense.},
+  url         = {http://arxiv.org/abs/2402.06363},
+  bibtex_show = {false},
+  arxiv       = {2402.06363},
+  code        = {https://github.com/sizhe-chen/struq},
+  preview     = {struq_thumbnail.png}
+}
+
+@inproceedings{li_oodrobustbench_2024,
+  abbr        = {ICML},
+  title       = {{{OODRobustBench}}: A Benchmark and Large-Scale Analysis of Adversarial Robustness under Distribution Shift},
+  booktitle   = {Proceedings of the 41st International Conference on Machine Learning},
+  author      = {Li, Lin and Wang, Yifei and Sitawarin, Chawin and Spratling, Michael W.},
+  editor      = {Salakhutdinov, Ruslan and Kolter, Zico and Heller, Katherine and Weller, Adrian and Oliver, Nuria and Scarlett, Jonathan and Berkenkamp, Felix},
+  year        = {2024},
+  month       = jul,
+  series      = {Proceedings of Machine Learning Research},
+  volume      = {235},
+  pages       = {28830--28869},
+  publisher   = {PMLR},
+  url         = {https://proceedings.mlr.press/v235/li24bp.html},
+  abstract    = {Existing works have made great progress in improving adversarial robustness, but typically test their method only on data from the same distribution as the training data, i.e. in-distribution (ID) testing. As a result, it is unclear how such robustness generalizes under input distribution shifts, i.e. out-of-distribution (OOD) testing. This omission is concerning as such distribution shifts are unavoidable when methods are deployed in the wild. To address this issue we propose a benchmark named OODRobustBench to comprehensively assess OOD adversarial robustness using 23 dataset-wise shifts (i.e. naturalistic shifts in input distribution) and 6 threat-wise shifts (i.e., unforeseen adversarial threat models). OODRobustBench is used to assess 706 robust models using 60.7K adversarial evaluations. This large-scale analysis shows that: 1) adversarial robustness suffers from a severe OOD generalization issue; 2) ID robustness correlates strongly with OOD robustness in a positive linear way. The latter enables the prediction of OOD robustness from ID robustness. We then predict and verify that existing methods are unlikely to achieve high OOD robustness. Novel methods are therefore required to achieve OOD robustness beyond our prediction. To facilitate the development of these methods, we investigate a wide range of techniques and identify several promising directions. Code and models are available at: https://github.com/OODRobustBench/OODRobustBench.},
+  arxiv       = {2310.12793},
+  bibtex_show = {true},
+  code        = {https://github.com/oodrobustbench/oodrobustbench},
+  preview     = {oodrobust_thumbnail.png}
+}
+
+@inproceedings{ding_vulnerability_2024,
+  abbr        = {ICSE},
+  author      = {Ding, Yangruibo and Fu, Yanjun and Ibrahim, Omniyyah and Sitawarin, Chawin and Chen, Xinyun and Alomair, Basel and Wagner, David and Ray, Baishakhi and Chen, Yizheng},
+  title       = {Vulnerability Detection with Code Language Models: How Far Are We?},
+  year        = {2024},
+  month       = mar,
+  publisher   = {Association for Computing Machinery},
+  address     = {New York, NY, USA},
+  abstract    = {In the context of the rising interest in code language models (code LMs) and vulnerability detection, we study the effectiveness of code LMs for detecting vulnerabilities. Our analysis reveals significant shortcomings in existing vulnerability datasets, including poor data quality, low label accuracy, and high duplication rates, leading to unreliable model performance in realistic vulnerability detection scenarios. Additionally, the evaluation methods used with these datasets are not representative of real-world vulnerability detection. To address these challenges, we introduce PrimeVul, a new dataset for training and evaluating code LMs for vulnerability detection. PrimeVul incorporates a novel set of data labeling techniques that achieve comparable label accuracy to human-verified benchmarks while significantly expanding the dataset. It also implements a rigorous data de-duplication and chronological data splitting strategy to mitigate data leakage issues, alongside introducing more realistic evaluation metrics and settings. This comprehensive approach aims to provide a more accurate assessment of code LMs' performance in real-world conditions. Evaluating code LMs on PrimeVul reveals that existing benchmarks significantly overestimate the performance of these models. For instance, a state-of-the-art 7B model scored 68.26\% F1 on BigVul but only 3.09\% F1 on PrimeVul. Attempts to improve performance through advanced training techniques and larger models like GPT-3.5 and GPT-4 were unsuccessful, with results akin to random guessing in the most stringent settings. These findings underscore the considerable gap between current capabilities and the practical requirements for deploying code LMs in security roles, highlighting the need for more innovative research in this domain.},
+  url         = {http://arxiv.org/abs/2403.18624},
+  booktitle   = {Proceedings of the IEEE/ACM 47th International Conference on Software Engineering},
+  series      = {ICSE '25},
+  bibtex_show = {true},
+  arxiv       = {2403.18624},
+  code        = {https://github.com/dlvuldet/primevul},
+  preview     = {primevul_thumbnail.png}
 }
 
 @inproceedings{piet_jatmo_2024,
@@ -527,29 +526,6 @@
   preview       = {pal_thumbnail.png}
 }
 
-@article{chen_struq_2024,
-  abbr          = {Preprint},
-  title         = {{{StruQ}}: Defending against Prompt Injection with Structured Queries},
-  shorttitle    = {{{StruQ}}},
-  author        = {Chen, Sizhe and Piet, Julien and Sitawarin, Chawin and Wagner, David},
-  year          = {2024},
-  month         = feb,
-  number        = {arXiv:2402.06363},
-  eprint        = {2402.06363},
-  primaryclass  = {cs},
-  publisher     = {arXiv},
-  url           = {http://arxiv.org/abs/2402.06363},
-  urldate       = {2024-02-12},
-  abstract      = {Recent advances in Large Language Models (LLMs) enable exciting LLM-integrated applications, which perform text-based tasks by utilizing their advanced language understanding capabilities. However, as LLMs have improved, so have the attacks against them. Prompt injection attacks are an important threat: they trick the model to deviate from the original application's instructions and instead follow user directives. These attacks rely on the LLM's ability to follow instructions and inability to separate the prompts and user data. We introduce structured queries, a general approach to tackle this problem. Structured queries separate prompts and data into two channels. We implement a system that supports structured queries. This system is made of (1) a secure front-end that formats a prompt and user data into a special format, and (2) a specially trained LLM that can produce high-quality outputs from these inputs. The LLM is trained using a novel fine-tuning strategy: we convert a base (non-instruction-tuned) LLM to a structured instruction-tuned model that will only follow instructions in the prompt portion of a query. To do so, we augment standard instruction tuning datasets with examples that also include instructions in the data portion of the query, and fine-tune the model to ignore these. Our system significantly improves resistance to prompt injection attacks, with little or no impact on utility. Our code is released at https://github.com/Sizhe-Chen/PromptInjectionDefense.},
-  archiveprefix = {arxiv},
-  copyright     = {CC0 1.0 Universal Public Domain Dedication},
-  keywords      = {Computer Science - Cryptography and Security},
-  bibtex_show   = {false},
-  arxiv         = {2402.06363},
-  journal       = {Under submission},
-  preview       = {struq_thumbnail.png}
-}
-
 @inproceedings{sitawarin_defending_2024,
   title         = {PubDef: Defending against Transfer Attacks from Public Models},
   booktitle     = {The Twelfth International Conference on Learning Representations},
@@ -567,7 +543,9 @@
   abbr          = {ICLR},
   arxiv         = {2310.17645},
   preview       = {pubdef_thumbnail.png},
-  website       = {https://wagner-group.github.io/projects/pubdef/index.html}
+  website       = {https://wagner-group.github.io/projects/pubdef/index.html},
+  talk          = {https://recorder-v3.slideslive.com/?share=92103&s=183329c8-37ce-42c4-a41a-fff6998c8055},
+  slides        = {pubdef_iclr2024_slides.pdf}
 }
 
 @inproceedings{shah_spder_2024,
