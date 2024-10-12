@@ -17,10 +17,10 @@ profile:
 # <p>"giant panda": 100,000%</p>
 # <p>(he/him)</p>
 
-news: false  # includes a list of news items
-selected_papers: false # includes a list of papers marked as "selected={true}"
-social: false  # includes social icons at the bottom of the page
-latest_posts: false  # includes a list of the newest posts
+# news: false  # includes a list of news items
+# selected_papers: false # includes a list of papers marked as "selected={true}"
+# social: false  # includes social icons at the bottom of the page
+# latest_posts: false  # includes a list of the newest posts
 ---
 
 [CV](/assets/pdf/Chawin_Sitawarin_CV.pdf) &nbsp;&nbsp;&nbsp;&nbsp; [Google Scholar](https://scholar.google.com/citations?hl=en&authuser=1&user=AxUAEQ4AAAAJ)
