@@ -79,11 +79,16 @@ jobs:
           valueFile: "_config.yml"
           propertyPath: "giscus.repo"
           value: ${{ github.repository }}
-      - name: Install and Build 🔧
+      - name: Install Jupyter
         run: |
           python3 -m venv venv
           source venv/bin/activate
           pip3 install --upgrade jupyter
+      - name: Install ImageMagick
+        run: |
+          sudo apt install imagemagick
+      - name: Install and Build 🔧
+        run: |
           export JEKYLL_ENV=production
           bundle exec jekyll build
       - name: Purge unused CSS 🧹
