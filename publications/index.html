@@ -153,54 +153,6 @@
             
           
             
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
               
                 
                 <li class="nav-item active">
@@ -249,13 +201,6 @@
             
           
           
-            <!-- Search -->
-            <li class="nav-item">
-              <button id="search-toggle" title="Search" onclick="openSearchModal()">
-                <span class="nav-link">ctrl k <i class="ti ti-search"></i></span>
-              </button>
-            </li>
-          
           
         </ul>
       </div>
@@ -296,6 +241,144 @@
 
 <h2 class="bibliography">2024</h2>
 <ol class="bibliography">
+<li>
+<div class="row mt-4 mb-5">
+  
+    <div class="col col-sm-2 abbr">
+          <abbr class="badge rounded w-100" style="background-color:#b31b1b">
+            
+              <a href="https://arxiv.org/" rel="external nofollow noopener" target="_blank">Preprint</a>
+            
+          </abbr>
+        
+      
+      
+        
+          
+          
+
+
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/publication_preview/iris_thumbnail.png" sizes="800px"></source>
+    
+    <img src="/assets/img/publication_preview/iris_thumbnail.png" class="preview z-depth-0 rounded mt-1" width="100%" height="auto" alt="iris_thumbnail.png" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+  </picture>
+
+  
+</figure>
+
+        
+      
+    </div>
+  
+
+  <!-- Entry bib key -->
+  <div id="huang_stronger_2024" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">Stronger Universal and Transfer Attacks by Suppressing Refusals</div>
+    <!-- Author -->
+    <div class="author mt-2">
+      
+
+      
+      David
+            Huang, Avidan
+            Shah, Alexandre
+            Araujo, David
+            Wagner, and <em>Chawin
+            Sitawarin</em>
+      
+    </div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="periodical">
+      <em>In Neurips Safe Generative AI Workshop 2024</em>,  Oct 2024
+    </div>
+    <div class="periodical">
+      Full version is under submission.
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      
+      
+        <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
+      
+      
+      
+        <a class="bibtex btn btn-sm z-depth-0" role="button">Bibtex</a>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </div>
+    
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+      
+    
+
+    
+
+    
+      <!-- Hidden abstract block -->
+      <div class="abstract hidden">
+        <p>Making large language models (LLMs) safe for mass deployment is a complex and ongoing challenge. Efforts have focused on aligning models to human preferences (RLHF) in order to prevent malicious uses, essentially embedding a “safety feature” into the model’s parameters. The Greedy Coordinate Gradient (GCG) algorithm (Zou et al., 2023b) emerges as one of the most popular automated jailbreaks, an attack that circumvents this safety training. So far, it is believed that these optimization-based attacks are sample-specific as opposed to hand-crafted ones. To make the automated jailbreak universal and transferable, they require incorporating multiple samples and models into the objective function. Contrary to this belief, we find that the adversarial prompts discovered by such optimizers are inherently prompt-universal and transferable, even when optimized on a single model and a single harmful request. To further amplify this phenomenon, we introduce a new objective to these optimizers to explicitly deactivate the safety feature to create an even stronger universal and transferable attack. Without requiring a large number of queries or accessing output token probabilities, our transfer attack, optimized on Llama-3, achieves a 92% success rate against the state-of-the-art Circuit Breaker defense, compared to 2.5% by white-box GCG. Crucially, our method also attains state-of-the-art transfer rates on frontier models: GPT-3.5-Turbo (96%), GPT-4o (82%), and GPT-4o-mini (88%).</p>
+      </div>
+    
+
+    
+      <!-- Hidden bibtex block -->
+      <div class="bibtex hidden">
+        <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">huang_stronger_2024</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Stronger Universal and Transfer Attacks by Suppressing Refusals}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Neurips Safe Generative {{AI}} Workshop 2024}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Huang, David and Shah, Avidan and Araujo, Alexandre and Wagner, David and Sitawarin, Chawin}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2024}</span><span class="p">,</span>
+  <span class="na">month</span> <span class="p">=</span> <span class="nv">oct</span><span class="p">,</span>
+  <span class="na">note</span> <span class="p">=</span> <span class="s">{Full version is under submission.}</span><span class="p">,</span>
+  <span class="na">url</span> <span class="p">=</span> <span class="s">{https://openreview.net/forum?id=eIBWRAbhND}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure>
+      </div>
+    
+
+    
+  </div>
+</div>
+</li>
 <li>
 <div class="row mt-4 mb-5">
   
@@ -384,6 +467,10 @@
         <a class="bibtex btn btn-sm z-depth-0" role="button">Bibtex</a>
       
       
+      
+        
+          <a href="https://openreview.net/forum?id=lZJCtOWdoU" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+        
       
       
       
@@ -667,6 +754,10 @@
         <a class="bibtex btn btn-sm z-depth-0" role="button">Bibtex</a>
       
       
+      
+        
+          <a href="https://openreview.net/forum?id=RnYd44LR2v" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+        
       
       
       
@@ -965,6 +1056,10 @@
       
       
       
+        
+          <a href="https://dl.acm.org/doi/abs/10.1007/978-3-031-70879-4_6" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+        
+      
       
       
       
@@ -1258,6 +1353,10 @@
       
       
       
+        
+          <a href="https://openreview.net/forum?id=Tvwf4Vsi5F" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+        
+      
       
       
       
@@ -1405,6 +1504,10 @@
       
       
       
+        
+          <a href="https://openreview.net/forum?id=92btneN9Wm" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+        
+      
       
       
       
@@ -1548,6 +1651,10 @@
         <a class="bibtex btn btn-sm z-depth-0" role="button">Bibtex</a>
       
       
+      
+        
+          <a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Hingun_REAP_A_Large-Scale_Realistic_Adversarial_Patch_Benchmark_ICCV_2023_paper.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+        
       
       
       
@@ -4550,389 +4657,6 @@
 
 
     
-  <script type="module" src="/assets/js/search/ninja-keys.min.js?a3446f084dcaecc5f75aa1757d087dcf"></script>
-  <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys>
-  <script>
-    let searchTheme = determineComputedTheme();
-    const ninjaKeys = document.querySelector('ninja-keys');
-
-    if (searchTheme === 'dark') {
-      ninjaKeys.classList.add('dark');
-    } else {
-      ninjaKeys.classList.remove('dark');
-    }
-
-    const openSearchModal = () => {
-      // collapse navbarNav if expanded on mobile
-      const $navbarNav = $('#navbarNav');
-      if ($navbarNav.hasClass('show')) {
-        $navbarNav.collapse('hide');
-      }
-      ninjaKeys.open();
-    };
-  </script>
-  <script>
-    // get the ninja-keys element
-    const ninja = document.querySelector('ninja-keys');
-
-    // add the home and posts menu items
-    ninja.data = [{
-        id: "nav-about",
-        title: "about",
-        section: "Navigation",
-        handler: () => {
-          window.location.href = "/";
-        },
-      },{id: "nav-publications",
-              title: "publications",
-              description: "publications by categories in reversed chronological order.* = equal contribution.",
-              section: "Navigation",
-              handler: () => {
-                window.location.href = "/publications/";
-              },
-            },{id: "nav-llm-sp",
-              title: "llm-sp",
-              description: "A growing collection of LLM security and privacy papers.",
-              section: "Navigation",
-              handler: () => {
-                window.location.href = "/llm-sp/";
-              },
-            },{id: "nav-services",
-              title: "services",
-              description: "",
-              section: "Navigation",
-              handler: () => {
-                window.location.href = "/service/";
-              },
-            },{id: "post-a-post-with-tabs",
-          
-            title: "a post with tabs",
-          
-          description: "this is what included tabs in a post could look like",
-          section: "Posts",
-          handler: () => {
-            
-              window.location.href = "/sample-posts/2024/05/01/tabs.html";
-            
-          },
-        },{id: "post-a-post-with-typograms",
-          
-            title: "a post with typograms",
-          
-          description: "this is what included typograms code could look like",
-          section: "Posts",
-          handler: () => {
-            
-              window.location.href = "/sample-posts/2024/04/29/typograms.html";
-            
-          },
-        },{id: "post-a-post-that-can-be-cited",
-          
-            title: "a post that can be cited",
-          
-          description: "this is what a post that can be cited looks like",
-          section: "Posts",
-          handler: () => {
-            
-              window.location.href = "/sample-posts/2024/04/28/post-citation.html";
-            
-          },
-        },{id: "post-a-post-with-pseudo-code",
-          
-            title: "a post with pseudo code",
-          
-          description: "this is what included pseudo code could look like",
-          section: "Posts",
-          handler: () => {
-            
-              window.location.href = "/sample-posts/2024/04/15/pseudocode.html";
-            
-          },
-        },{id: "post-a-post-with-code-diff",
-          
-            title: "a post with code diff",
-          
-          description: "this is how you can display code diffs",
-          section: "Posts",
-          handler: () => {
-            
-              window.location.href = "/sample-posts/2024/01/27/code-diff.html";
-            
-          },
-        },{id: "post-a-post-with-advanced-image-components",
-          
-            title: "a post with advanced image components",
-          
-          description: "this is what advanced image components could look like",
-          section: "Posts",
-          handler: () => {
-            
-              window.location.href = "/sample-posts/2024/01/27/advanced-images.html";
-            
-          },
-        },{id: "post-a-post-with-vega-lite",
-          
-            title: "a post with vega lite",
-          
-          description: "this is what included vega lite code could look like",
-          section: "Posts",
-          handler: () => {
-            
-              window.location.href = "/sample-posts/2024/01/27/vega-lite.html";
-            
-          },
-        },{id: "post-a-post-with-geojson",
-          
-            title: "a post with geojson",
-          
-          description: "this is what included geojson code could look like",
-          section: "Posts",
-          handler: () => {
-            
-              window.location.href = "/sample-posts/2024/01/26/geojson-map.html";
-            
-          },
-        },{id: "post-a-post-with-echarts",
-          
-            title: "a post with echarts",
-          
-          description: "this is what included echarts code could look like",
-          section: "Posts",
-          handler: () => {
-            
-              window.location.href = "/sample-posts/2024/01/26/echarts.html";
-            
-          },
-        },{id: "post-a-post-with-chart-js",
-          
-            title: "a post with chart.js",
-          
-          description: "this is what included chart.js code could look like",
-          section: "Posts",
-          handler: () => {
-            
-              window.location.href = "/sample-posts/2024/01/26/chartjs.html";
-            
-          },
-        },{id: "post-a-post-with-tikzjax",
-          
-            title: "a post with TikZJax",
-          
-          description: "this is what included TikZ code could look like",
-          section: "Posts",
-          handler: () => {
-            
-              window.location.href = "/sample-posts/2023/12/12/tikzjax.html";
-            
-          },
-        },{id: "post-a-post-with-bibliography",
-          
-            title: "a post with bibliography",
-          
-          description: "an example of a blog post with bibliography",
-          section: "Posts",
-          handler: () => {
-            
-              window.location.href = "/sample-posts/2023/07/12/post-bibliography.html";
-            
-          },
-        },{id: "post-a-post-with-jupyter-notebook",
-          
-            title: "a post with jupyter notebook",
-          
-          description: "an example of a blog post with jupyter notebook",
-          section: "Posts",
-          handler: () => {
-            
-              window.location.href = "/sample-posts/2023/07/04/jupyter-notebook.html";
-            
-          },
-        },{id: "post-a-post-with-custom-blockquotes",
-          
-            title: "a post with custom blockquotes",
-          
-          description: "an example of a blog post with custom blockquotes",
-          section: "Posts",
-          handler: () => {
-            
-              window.location.href = "/sample-posts/2023/05/12/custom-blockquotes.html";
-            
-          },
-        },{id: "post-a-post-with-table-of-contents-on-a-sidebar",
-          
-            title: "a post with table of contents on a sidebar",
-          
-          description: "an example of a blog post with table of contents on a sidebar",
-          section: "Posts",
-          handler: () => {
-            
-              window.location.href = "/sample-posts/2023/04/25/sidebar-table-of-contents.html";
-            
-          },
-        },{id: "post-a-post-with-audios",
-          
-            title: "a post with audios",
-          
-          description: "this is what included audios could look like",
-          section: "Posts",
-          handler: () => {
-            
-              window.location.href = "/sample-posts/2023/04/25/audios.html";
-            
-          },
-        },{id: "post-a-post-with-videos",
-          
-            title: "a post with videos",
-          
-          description: "this is what included videos could look like",
-          section: "Posts",
-          handler: () => {
-            
-              window.location.href = "/sample-posts/2023/04/24/videos.html";
-            
-          },
-        },{id: "post-displaying-beautiful-tables-with-bootstrap-tables",
-          
-            title: "displaying beautiful tables with Bootstrap Tables",
-          
-          description: "an example of how to use Bootstrap Tables",
-          section: "Posts",
-          handler: () => {
-            
-              window.location.href = "/sample-posts/2023/03/20/tables.html";
-            
-          },
-        },{id: "post-a-post-with-table-of-contents",
-          
-            title: "a post with table of contents",
-          
-          description: "an example of a blog post with table of contents",
-          section: "Posts",
-          handler: () => {
-            
-              window.location.href = "/sample-posts/2023/03/20/table-of-contents.html";
-            
-          },
-        },{id: "post-a-post-with-giscus-comments",
-          
-            title: "a post with giscus comments",
-          
-          description: "an example of a blog post with giscus comments",
-          section: "Posts",
-          handler: () => {
-            
-              window.location.href = "/sample-posts/external-services/2022/12/10/giscus-comments.html";
-            
-          },
-        },{id: "post-a-post-with-redirect",
-          
-            title: "a post with redirect",
-          
-          description: "you can also redirect to assets like pdf",
-          section: "Posts",
-          handler: () => {
-            
-              window.location.href = "/assets/pdf/example_pdf.pdf";
-            
-          },
-        },{id: "post-a-distill-style-blog-post",
-          
-            title: "a distill-style blog post",
-          
-          description: "an example of a distill-style blog post and main elements",
-          section: "Posts",
-          handler: () => {
-            
-              window.location.href = "/2021/05/22/distill.html";
-            
-          },
-        },{id: "post-a-post-with-disqus-comments",
-          
-            title: "a post with disqus comments",
-          
-          description: "an example of a blog post with disqus comments",
-          section: "Posts",
-          handler: () => {
-            
-              window.location.href = "/sample-posts/external-services/2015/10/20/disqus-comments.html";
-            
-          },
-        },{id: "news-i-was-fortunate-to-intern-at-ibm-research-yorktown-heights-ny-over-the-summer-of-2019-and-to-be-mentored-by-supriyo-chakraborty",
-              title: 'I was fortunate to intern at IBM Research (Yorktown Heights, NY) over the...',
-              description: "",
-              section: "News",},{id: "news-our-project-was-awarded-a-grant-from-center-for-long-term-cybersecurity-cltc-for-2021",
-              title: 'Our project was awarded a grant from Center for Long-Term Cybersecurity (CLTC) for...',
-              description: "",
-              section: "News",},{id: "news-our-paper-mitigating-adversarial-training-instability-with-batch-normalization-will-appear-at-iclr-2021-workshop-on-security-and-safety-in-machine-learning-systems-this-work-is-led-by-arvind-sridhar-an-undergraduate-student-i-mentor-at-uc-berkeley-paper",
-              title: 'Our paper, Mitigating Adversarial Training Instability with Batch Normalization, will appear at ICLR...',
-              description: "",
-              section: "News",},{id: "news-i-interned-at-nokia-bell-labs-remote-and-was-very-fortunate-to-be-mentored-by-anwar-walid",
-              title: 'I interned at Nokia Bell Labs (remote) and was very fortunate to be...',
-              description: "",
-              section: "News",},{id: "news-our-paper-improving-the-accuracy-robustness-trade-off-for-dual-domain-adversarial-training-will-appear-at-icml-2021-workshop-on-uncertainty-amp-amp-robustness-in-deep-learning-paper",
-              title: 'Our paper, Improving the Accuracy-Robustness Trade-Off for Dual-Domain Adversarial Training, will appear at...',
-              description: "",
-              section: "News",},{id: "news-our-project-on-large-scale-adversarial-patch-benchmark-is-funded-by-microsoft-bair-commons",
-              title: 'Our project on large-scale adversarial patch benchmark is funded by Microsoft-BAIR Commons.',
-              description: "",
-              section: "News",},{id: "news-our-paper-sat-improving-adversarial-training-via-curriculum-based-loss-smoothing-will-appear-at-aisec-2021-paper-slides",
-              title: 'Our paper, SAT: Improving Adversarial Training via Curriculum-Based Loss Smoothing, will appear at...',
-              description: "",
-              section: "News",},{id: "news-our-paper-adversarial-examples-for-k-nearest-neighbor-classifiers-based-on-higher-order-voronoi-diagrams-will-appear-at-neurips-2021-paper-slides",
-              title: 'Our paper, Adversarial Examples for k-Nearest Neighbor Classifiers Based on Higher-Order Voronoi Diagrams,...',
-              description: "",
-              section: "News",},{id: "news-i-am-starting-at-google-research-as-a-part-time-student-researcher-mentored-by-nicholas-carlini",
-              title: 'I am starting at Google Research as a part-time student researcher, mentored by...',
-              description: "",
-              section: "News",},{id: "news-our-paper-demystifying-the-adversarial-robustness-of-random-transformation-defenses-is-selected-as-one-of-the-three-best-papers-at-aaai-2022-advml-workshop-paper-slides",
-              title: 'Our paper, Demystifying the Adversarial Robustness of Random Transformation Defenses, is selected as...',
-              description: "",
-              section: "News",},{id: "news-i-will-be-interning-at-google-research-during-summer-2022-hosted-by-ali-zand-and-david-tao",
-              title: 'I will be interning at Google Research during Summer 2022, hosted by Ali...',
-              description: "",
-              section: "News",},{id: "news-our-paper-demystifying-the-adversarial-robustness-of-random-transformation-defenses-will-appear-at-icml-2022",
-              title: 'Our paper, Demystifying the Adversarial Robustness of Random Transformation Defenses, will appear at...',
-              description: "",
-              section: "News",},{
-            id: 'socials-email',
-            title: 'Send email',
-            section: 'Socials',
-            handler: () => {
-              window.open("mailto:%63%68%61%77%69%6E%73@%62%65%72%6B%65%6C%65%79.%65%64%75", "_blank");
-            },
-          },{
-            id: 'socials-google-scholar',
-            title: 'Google Scholar',
-            section: 'Socials',
-            handler: () => {
-              window.open("https://scholar.google.com/citations?user=AxUAEQ4AAAAJ", "_blank");
-            },
-          },{
-            id: 'socials-github',
-            title: 'GitHub',
-            section: 'Socials',
-            handler: () => {
-              window.open("https://github.com/chawins", "_blank");
-            },
-          },{
-            id: 'socials-linkedin',
-            title: 'LinkedIn',
-            section: 'Socials',
-            handler: () => {
-              window.open("https://www.linkedin.com/in/chawins", "_blank");
-            },
-          },{
-            id: 'socials-x',
-            title: 'X',
-            description: 'Twitter',
-            section: 'Socials',
-            handler: () => {
-              window.open("https://twitter.com/csitawarin", "_blank");
-            },
-          },];
-  </script>
-  <script src="/assets/js/shortcut-key.js?6f508d74becd347268a7f822bca7309d"></script>
-
 
   </body>
 </html>
