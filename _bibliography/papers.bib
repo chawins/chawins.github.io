@@ -346,6 +346,7 @@
   pages        = {4640-4651},
   code         = {https://github.com/wagner-group/reap-benchmark},
   preview      = {reap_thumbnail.png},
+  pdf          = {https://openaccess.thecvf.com/content/ICCV2023/papers/Hingun_REAP_A_Large-Scale_Realistic_Adversarial_Patch_Benchmark_ICCV_2023_paper.pdf},
   poster       = {reap_poster_iccv2023.pdf}
 }
 
@@ -416,6 +417,21 @@
   award_name  = {Best Paper Runner-Up}
 }
 
+@inproceedings{huang_stronger_2024,
+  abbr        = {Preprint},
+  title       = {Stronger Universal and Transfer Attacks by Suppressing Refusals},
+  booktitle   = {Neurips Safe Generative {{AI}} Workshop 2024},
+  author      = {Huang, David and Shah, Avidan and Araujo, Alexandre and Wagner, David and Sitawarin, Chawin},
+  abstract    = {Making large language models (LLMs) safe for mass deployment is a complex and ongoing challenge. Efforts have focused on aligning models to human preferences (RLHF) in order to prevent malicious uses, essentially embedding a ``safety feature'' into the model's parameters. The Greedy Coordinate Gradient (GCG) algorithm (Zou et al., 2023b) emerges as one of the most popular automated jailbreaks, an attack that circumvents this safety training. So far, it is believed that these optimization-based attacks are sample-specific as opposed to hand-crafted ones. To make the automated jailbreak universal and transferable, they require incorporating multiple samples and models into the objective function. Contrary to this belief, we find that the adversarial prompts discovered by such optimizers are inherently prompt-universal and transferable, even when optimized on a single model and a single harmful request. To further amplify this phenomenon, we introduce a new objective to these optimizers to explicitly deactivate the safety feature to create an even stronger universal and transferable attack. Without requiring a large number of queries or accessing output token probabilities, our transfer attack, optimized on Llama-3, achieves a 92% success rate against the state-of-the-art Circuit Breaker defense, compared to 2.5% by white-box GCG. Crucially, our method also attains state-of-the-art transfer rates on frontier models: GPT-3.5-Turbo (96%), GPT-4o (82%), and GPT-4o-mini (88%).},
+  year        = {2024},
+  month       = oct,
+  note        = {Full version is under submission.},
+  url         = {https://openreview.net/forum?id=eIBWRAbhND},
+  bibtex_show = {true},
+  preview     = {iris_thumbnail.png}
+}
+
+
 @inproceedings{piet_markmywords_2024,
   abbr        = {Workshop},
   title       = {{{MarkMyWords}}: {{Analyzing}} and Evaluating Language Model Watermarks},
@@ -427,6 +443,7 @@
   keywords    = {Benchmark,LLM,Watermark},
   abstract    = {The capabilities of large language models have grown significantly in recent years and so too have concerns about their misuse. In this context, the ability to distinguish machine-generated text from human-authored content becomes important. Prior works have proposed numerous schemes to watermark text, which would benefit from a systematic evaluation framework. This work focuses on text watermarking techniques - as opposed to image watermarks - and proposes a comprehensive benchmark for them under different tasks as well as practical attacks. We focus on three main metrics: quality, size (e.g. the number of tokens needed to detect a watermark), and tamper-resistance. Current watermarking techniques are good enough to be deployed: Kirchenbauer et al. can watermark Llama2-7B-chat with no perceivable loss in quality in under 100 tokens, and with good tamper-resistance to simple attacks, regardless of temperature. We argue that watermark indistinguishability is too strong a requirement: schemes that slightly modify logit distributions outperform their indistinguishable counterparts with no noticeable loss in generation quality. We publicly release our benchmark.},
   arxiv       = {2312.00273},
+  pdf         = {https://openreview.net/forum?id=lZJCtOWdoU},
   code        = {https://github.com/wagner-group/MarkMyWords},
   bibtex_show = {true},
   website     = {https://wagner-group.github.io/projects/markmywords/index.html},
@@ -464,6 +481,7 @@
   abstract    = {Existing works have made great progress in improving adversarial robustness, but typically test their method only on data from the same distribution as the training data, i.e. in-distribution (ID) testing. As a result, it is unclear how such robustness generalizes under input distribution shifts, i.e. out-of-distribution (OOD) testing. This omission is concerning as such distribution shifts are unavoidable when methods are deployed in the wild. To address this issue we propose a benchmark named OODRobustBench to comprehensively assess OOD adversarial robustness using 23 dataset-wise shifts (i.e. naturalistic shifts in input distribution) and 6 threat-wise shifts (i.e., unforeseen adversarial threat models). OODRobustBench is used to assess 706 robust models using 60.7K adversarial evaluations. This large-scale analysis shows that: 1) adversarial robustness suffers from a severe OOD generalization issue; 2) ID robustness correlates strongly with OOD robustness in a positive linear way. The latter enables the prediction of OOD robustness from ID robustness. We then predict and verify that existing methods are unlikely to achieve high OOD robustness. Novel methods are therefore required to achieve OOD robustness beyond our prediction. To facilitate the development of these methods, we investigate a wide range of techniques and identify several promising directions. Code and models are available at: https://github.com/OODRobustBench/OODRobustBench.},
   arxiv       = {2310.12793},
   bibtex_show = {true},
+  pdf         = {https://openreview.net/forum?id=RnYd44LR2v},
   code        = {https://github.com/oodrobustbench/oodrobustbench},
   preview     = {oodrobust_thumbnail.png}
 }
@@ -499,6 +517,7 @@
   abstract    = {Large Language Models (LLMs) are attracting significant research attention due to their instruction-following abilities, allowing users and developers to leverage LLMs for a variety of tasks. However, LLMs are vulnerable to prompt-injection attacks: a class of attacks that hijack the model's instruction-following abilities, changing responses to prompts to undesired, possibly malicious ones. In this work, we introduce Jatmo, a method for generating task-specific models resilient to prompt-injection attacks. Jatmo leverages the fact that LLMs can only follow instructions once they have undergone instruction tuning. It harnesses a teacher instruction-tuned model to generate a task-specific dataset, which is then used to fine-tune a base model (i.e., a non-instruction-tuned model). Jatmo only needs a task prompt and a dataset of inputs for the task: it uses the teacher model to generate outputs. For situations with no pre-existing datasets, Jatmo can use a single example, or in some cases none at all, to produce a fully synthetic dataset. Our experiments on six tasks show that Jatmo models provide the same quality of outputs on their specific task as standard LLMs, while being resilient to prompt injections. The best attacks succeeded in less than 0.5\% of cases against our models, versus over 90\% success rate against GPT-3.5-Turbo. We release Jatmo at https://github.com/wagner-group/prompt-injection-defense.},
   copyright   = {All rights reserved},
   bibtex_show = {false},
+  pdf         = {https://dl.acm.org/doi/abs/10.1007/978-3-031-70879-4_6},
   code        = {https://github.com/wagner-group/prompt-injection-defense},
   arxiv       = {2312.17673},
   preview     = {jatmo_thumbnail.png}
@@ -545,6 +564,7 @@
   abbr          = {ICLR},
   arxiv         = {2310.17645},
   preview       = {pubdef_thumbnail.png},
+  pdf           = {https://openreview.net/forum?id=Tvwf4Vsi5F},
   website       = {https://wagner-group.github.io/projects/pubdef/index.html},
   talk          = {https://recorder-v3.slideslive.com/?share=92103&s=183329c8-37ce-42c4-a41a-fff6998c8055},
   slides        = {pubdef_iclr2024_slides.pdf}
@@ -561,6 +581,7 @@
   copyright   = {All rights reserved},
   bibtex_show = {true},
   arxiv       = {2306.15242},
+  pdf         = {https://openreview.net/forum?id=92btneN9Wm},
   preview     = {spder_thumbnail.png},
   code        = {https://github.com/katop1234/SPDER/},
   url         = {https://openreview.net/forum?id=92btneN9Wm}
