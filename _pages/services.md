@@ -11,9 +11,6 @@ nav_order: 5
 TA
 
 - **Introduction to Machine Learning** (UC Berkeley): Fall 2020, Spring 2023 (Outstanding Graduate Student Instructor Award)
-
-Lab TA
-
 - **Contemporary Logic Design** (Princeton University): Fall 2016
 
 Grader
@@ -59,11 +56,11 @@ I am extremely fortunate to have mentored and worked with lots of brilliant stud
 
 #### reviewer
 
-- ICLR: 2024
-- ICML: 2022 (Outstanding Reviewer), 2024
-- NeurIPS: 2022, 2023
+- ICLR: 2024, 2025
+- ICML: 2022 (Outstanding Reviewer), 2024, 2025
+- NeurIPS: 2022, 2023, 2024
 - BANDS (ICLR Workshop): 2023
 
 #### program committee
 
-- AISec: 2022, 2023
+- AISec: 2022, 2023, 2024
