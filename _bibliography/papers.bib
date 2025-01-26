@@ -11,8 +11,10 @@
   doi         = {10.1109/CISS.2018.8362326},
   pages       = {1--5},
   pdf         = {https://arxiv.org/abs/1704.02654},
+  arxiv       = {1704.02654},
   title       = {Enhancing Robustness of Machine Learning Systems via Data Transformations},
-  year        = {2018}
+  year        = {2018},
+  preview     = {pca_thumbnail.png}
 }
 
 @inproceedings{lin_inversedesigned_2016,
@@ -25,7 +27,8 @@
   isbn        = {978-1-943580-11-8},
   pdf         = {http://ieeexplore.ieee.org/document/7788596/},
   title       = {Inverse-Designed Nonlinear Nanophotonic Structures: Enhanced Frequency Conversion at the Nano Scale},
-  year        = {2016}
+  year        = {2016},
+  preview     = {cleo_thumbnail.png}
 }
 
 @article{martinez_grand_2017,
@@ -39,10 +42,12 @@
   eprinttype    = {arxiv},
   journal       = {arXiv:1712.01397 [cs]},
   month         = dec,
-  pdf           = {https://dl.acm.org/citation.cfm?id=3278515},
+  arxiv         = {1712.01397},
+  pdf           = {https://princetonautonomous.github.io/paper.pdf},
   primaryclass  = {cs},
   title         = {Beyond Grand Theft Auto v for Training, Testing and Enhancing Deep Learning in Self Driving Cars},
-  year          = {2017}
+  year          = {2017},
+  preview       = {gta_thumbnail.png}
 }
 
 @inproceedings{sehwag_analyzing_2019,
@@ -70,7 +75,6 @@
   abbr        = {CCS},
   abstract    = {Deep neural networks (DNNs) have enabled success in learning tasks such as image classification, semantic image segmentation and steering angle prediction which can be key components of the computer vision pipeline of safety-critical systems such as autonomous vehicles. However, previous work has demonstrated the feasibility of using physical adversarial examples to attack image classification systems.},
   address     = {{Toronto Canada}},
-  annotation  = {4 citations (Semantic Scholar/DOI) [2021-06-11] 0 citations (Crossref) [2021-06-11] 00000},
   author      = {Sehwag, Vikash and Sitawarin, Chawin and Bhagoji, Arjun Nitin and Mosenia, Arsalan and Chiang, Mung and Mittal, Prateek},
   bibtex_show = {false},
   booktitle   = {Proceedings of the 2018 {{ACM SIGSAC Conference}} on {{Computer}} and {{Communications Security}}},
@@ -84,7 +88,8 @@
   publisher   = {{ACM}},
   shorttitle  = {Not All Pixels Are Born Equal},
   title       = {Not All Pixels Are Born Equal: An Analysis of Evasion Attacks under Locality Constraints},
-  year        = {2018}
+  year        = {2018},
+  preview     = {patch_attack_location_thumbnail.png}
 }
 
 @inproceedings{sitawarin_adversarial_2021,
@@ -116,11 +121,13 @@
   eprinttype    = {arxiv},
   journal       = {arXiv:1802.06430 [cs]},
   month         = may,
+  arxiv         = {1802.06430},
   pdf           = {https://arxiv.org/abs/1802.06430},
   primaryclass  = {cs},
   shorttitle    = {{{DARTS}}},
   title         = {{{DARTS}}: Deceiving Autonomous Cars with Toxic Signs},
-  year          = {2018}
+  year          = {2018},
+  preview       = {darts_thumbnail.png}
 }
 
 @article{sitawarin_defending_2019,
@@ -274,7 +281,8 @@
   primaryclass  = {cs},
   shorttitle    = {Rogue Signs},
   title         = {Rogue Signs: Deceiving Traffic Sign Recognition with Malicious Ads and Logos},
-  year          = {2018}
+  year          = {2018},
+  preview       = {rogue_thumbnail.png}
 }
 
 @inproceedings{sitawarin_sat_2021,
@@ -417,21 +425,6 @@
   award_name  = {Best Paper Runner-Up}
 }
 
-@inproceedings{chen_struq_2024,
-  abbr        = {USENIX Security},
-  title       = {{{StruQ}}: Defending against Prompt Injection with Structured Queries},
-  booktitle   = {34th {{USENIX}} Security Symposium ({{USENIX}} Security 25)},
-  author      = {Chen, Sizhe and Piet, Julien and Sitawarin, Chawin and Wagner, David},
-  year        = {2024},
-  month       = feb,
-  abstract    = {Recent advances in Large Language Models (LLMs) enable exciting LLM-integrated applications, which perform text-based tasks by utilizing their advanced language understanding capabilities. However, as LLMs have improved, so have the attacks against them. Prompt injection attacks are an important threat: they trick the model to deviate from the original application's instructions and instead follow user directives. These attacks rely on the LLM's ability to follow instructions and inability to separate the prompts and user data. We introduce structured queries, a general approach to tackle this problem. Structured queries separate prompts and data into two channels. We implement a system that supports structured queries. This system is made of (1) a secure front-end that formats a prompt and user data into a special format, and (2) a specially trained LLM that can produce high-quality outputs from these inputs. The LLM is trained using a novel fine-tuning strategy: we convert a base (non-instruction-tuned) LLM to a structured instruction-tuned model that will only follow instructions in the prompt portion of a query. To do so, we augment standard instruction tuning datasets with examples that also include instructions in the data portion of the query, and fine-tune the model to ignore these. Our system significantly improves resistance to prompt injection attacks, with little or no impact on utility. Our code is released at https://github.com/Sizhe-Chen/PromptInjectionDefense.},
-  url         = {http://arxiv.org/abs/2402.06363},
-  bibtex_show = {false},
-  arxiv       = {2402.06363},
-  code        = {https://github.com/sizhe-chen/struq},
-  preview     = {struq_thumbnail.png}
-}
-
 @inproceedings{li_oodrobustbench_2024,
   abbr        = {ICML},
   title       = {{{OODRobustBench}}: A Benchmark and Large-Scale Analysis of Adversarial Robustness under Distribution Shift},
@@ -451,24 +444,6 @@
   pdf         = {https://openreview.net/forum?id=RnYd44LR2v},
   code        = {https://github.com/oodrobustbench/oodrobustbench},
   preview     = {oodrobust_thumbnail.png}
-}
-
-@inproceedings{ding_vulnerability_2024,
-  abbr        = {ICSE},
-  author      = {Ding, Yangruibo and Fu, Yanjun and Ibrahim, Omniyyah and Sitawarin, Chawin and Chen, Xinyun and Alomair, Basel and Wagner, David and Ray, Baishakhi and Chen, Yizheng},
-  title       = {Vulnerability Detection with Code Language Models: How Far Are We?},
-  year        = {2024},
-  month       = mar,
-  publisher   = {Association for Computing Machinery},
-  address     = {New York, NY, USA},
-  abstract    = {In the context of the rising interest in code language models (code LMs) and vulnerability detection, we study the effectiveness of code LMs for detecting vulnerabilities. Our analysis reveals significant shortcomings in existing vulnerability datasets, including poor data quality, low label accuracy, and high duplication rates, leading to unreliable model performance in realistic vulnerability detection scenarios. Additionally, the evaluation methods used with these datasets are not representative of real-world vulnerability detection. To address these challenges, we introduce PrimeVul, a new dataset for training and evaluating code LMs for vulnerability detection. PrimeVul incorporates a novel set of data labeling techniques that achieve comparable label accuracy to human-verified benchmarks while significantly expanding the dataset. It also implements a rigorous data de-duplication and chronological data splitting strategy to mitigate data leakage issues, alongside introducing more realistic evaluation metrics and settings. This comprehensive approach aims to provide a more accurate assessment of code LMs' performance in real-world conditions. Evaluating code LMs on PrimeVul reveals that existing benchmarks significantly overestimate the performance of these models. For instance, a state-of-the-art 7B model scored 68.26\% F1 on BigVul but only 3.09\% F1 on PrimeVul. Attempts to improve performance through advanced training techniques and larger models like GPT-3.5 and GPT-4 were unsuccessful, with results akin to random guessing in the most stringent settings. These findings underscore the considerable gap between current capabilities and the practical requirements for deploying code LMs in security roles, highlighting the need for more innovative research in this domain.},
-  url         = {http://arxiv.org/abs/2403.18624},
-  booktitle   = {Proceedings of the IEEE/ACM 47th International Conference on Software Engineering},
-  series      = {ICSE '25},
-  bibtex_show = {true},
-  arxiv       = {2403.18624},
-  code        = {https://github.com/dlvuldet/primevul},
-  preview     = {primevul_thumbnail.png}
 }
 
 @inproceedings{piet_jatmo_2024,
@@ -588,4 +563,41 @@
   bibtex_show = {true},
   website     = {https://wagner-group.github.io/projects/markmywords/index.html},
   preview     = {markmywords_thumbnail.jpg}
+}
+
+@inproceedings{ding_vulnerability_2025,
+  abbr        = {ICSE},
+  author      = {Ding, Yangruibo and Fu, Yanjun and Ibrahim, Omniyyah and Sitawarin, Chawin and Chen, Xinyun and Alomair, Basel and Wagner, David and Ray, Baishakhi and Chen, Yizheng},
+  title       = {Vulnerability Detection with Code Language Models: How Far Are We?},
+  year        = {2025},
+  month       = may,
+  publisher   = {IEEE Computer Society},
+  address     = {Los Alamitos, CA, USA},
+  abstract    = {In the context of the rising interest in code language models (code LMs) and vulnerability detection, we study the effectiveness of code LMs for detecting vulnerabilities. Our analysis reveals significant shortcomings in existing vulnerability datasets, including poor data quality, low label accuracy, and high duplication rates, leading to unreliable model performance in realistic vulnerability detection scenarios. Additionally, the evaluation methods used with these datasets are not representative of real-world vulnerability detection. To address these challenges, we introduce PrimeVul, a new dataset for training and evaluating code LMs for vulnerability detection. PrimeVul incorporates a novel set of data labeling techniques that achieve comparable label accuracy to human-verified benchmarks while significantly expanding the dataset. It also implements a rigorous data de-duplication and chronological data splitting strategy to mitigate data leakage issues, alongside introducing more realistic evaluation metrics and settings. This comprehensive approach aims to provide a more accurate assessment of code LMs' performance in real-world conditions. Evaluating code LMs on PrimeVul reveals that existing benchmarks significantly overestimate the performance of these models. For instance, a state-of-the-art 7B model scored 68.26\% F1 on BigVul but only 3.09\% F1 on PrimeVul. Attempts to improve performance through advanced training techniques and larger models like GPT-3.5 and GPT-4 were unsuccessful, with results akin to random guessing in the most stringent settings. These findings underscore the considerable gap between current capabilities and the practical requirements for deploying code LMs in security roles, highlighting the need for more innovative research in this domain.},
+  url         = {https://doi.ieeecomputersociety.org/10.1109/ICSE55347.2025.00038},
+  booktitle   = {2025 {{IEEE}}/{{ACM}} 47th International Conference on Software Engineering ({{ICSE}})},
+  pages       = {469--481},
+  issn        = {1558-1225},
+  series      = {ICSE '25},
+  pdf         = {https://doi.ieeecomputersociety.org/10.1109/ICSE55347.2025.00038},
+  doi         = {10.1109/ICSE55347.2025.00038},
+  bibtex_show = {true},
+  arxiv       = {2403.18624},
+  code        = {https://github.com/dlvuldet/primevul},
+  preview     = {primevul_thumbnail.png}
+}
+
+@inproceedings{chen_struq_2025,
+  abbr        = {USENIX Security},
+  title       = {{{StruQ}}: Defending against Prompt Injection with Structured Queries},
+  booktitle   = {34th {{USENIX}} Security Symposium ({{USENIX}} Security 25)},
+  author      = {Chen, Sizhe and Piet, Julien and Sitawarin, Chawin and Wagner, David},
+  year        = {2025},
+  month       = jul,
+  abstract    = {Recent advances in Large Language Models (LLMs) enable exciting LLM-integrated applications, which perform text-based tasks by utilizing their advanced language understanding capabilities. However, as LLMs have improved, so have the attacks against them. Prompt injection attacks are an important threat: they trick the model to deviate from the original application's instructions and instead follow user directives. These attacks rely on the LLM's ability to follow instructions and inability to separate the prompts and user data. We introduce structured queries, a general approach to tackle this problem. Structured queries separate prompts and data into two channels. We implement a system that supports structured queries. This system is made of (1) a secure front-end that formats a prompt and user data into a special format, and (2) a specially trained LLM that can produce high-quality outputs from these inputs. The LLM is trained using a novel fine-tuning strategy: we convert a base (non-instruction-tuned) LLM to a structured instruction-tuned model that will only follow instructions in the prompt portion of a query. To do so, we augment standard instruction tuning datasets with examples that also include instructions in the data portion of the query, and fine-tune the model to ignore these. Our system significantly improves resistance to prompt injection attacks, with little or no impact on utility. Our code is released at https://github.com/Sizhe-Chen/PromptInjectionDefense.},
+  url         = {http://arxiv.org/abs/2402.06363},
+  bibtex_show = {false},
+  arxiv       = {2402.06363},
+  code        = {https://github.com/sizhe-chen/struq},
+  preview     = {struq_thumbnail.png}
 }
