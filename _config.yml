@@ -6,9 +6,9 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Chawin
 middle_name:
 last_name: Sitawarin
-email: chawins@berkeley.edu
+email: chawin.sitawarin@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Postdoc @ Meta
+  Postdoc @ Central Applied Science, Meta
 footer_text: >
 keywords: adversarial examples, adversarial machine learning, privacy-preserving machine learning, robustness, LLM  # add your own keywords or leave empty
 

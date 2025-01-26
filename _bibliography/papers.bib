@@ -417,21 +417,6 @@
   award_name  = {Best Paper Runner-Up}
 }
 
-@inproceedings{huang_stronger_2024,
-  abbr        = {Preprint},
-  title       = {Stronger Universal and Transfer Attacks by Suppressing Refusals},
-  booktitle   = {Neurips Safe Generative {{AI}} Workshop 2024},
-  author      = {Huang, David and Shah, Avidan and Araujo, Alexandre and Wagner, David and Sitawarin, Chawin},
-  abstract    = {Making large language models (LLMs) safe for mass deployment is a complex and ongoing challenge. Efforts have focused on aligning models to human preferences (RLHF) in order to prevent malicious uses, essentially embedding a ``safety feature'' into the model's parameters. The Greedy Coordinate Gradient (GCG) algorithm (Zou et al., 2023b) emerges as one of the most popular automated jailbreaks, an attack that circumvents this safety training. So far, it is believed that these optimization-based attacks are sample-specific as opposed to hand-crafted ones. To make the automated jailbreak universal and transferable, they require incorporating multiple samples and models into the objective function. Contrary to this belief, we find that the adversarial prompts discovered by such optimizers are inherently prompt-universal and transferable, even when optimized on a single model and a single harmful request. To further amplify this phenomenon, we introduce a new objective to these optimizers to explicitly deactivate the safety feature to create an even stronger universal and transferable attack. Without requiring a large number of queries or accessing output token probabilities, our transfer attack, optimized on Llama-3, achieves a 92% success rate against the state-of-the-art Circuit Breaker defense, compared to 2.5% by white-box GCG. Crucially, our method also attains state-of-the-art transfer rates on frontier models: GPT-3.5-Turbo (96%), GPT-4o (82%), and GPT-4o-mini (88%).},
-  year        = {2024},
-  month       = oct,
-  note        = {Full version is under submission.},
-  url         = {https://openreview.net/forum?id=eIBWRAbhND},
-  bibtex_show = {true},
-  preview     = {iris_thumbnail.png}
-}
-
-
 @inproceedings{piet_markmywords_2024,
   abbr        = {Workshop},
   title       = {{{MarkMyWords}}: {{Analyzing}} and Evaluating Language Model Watermarks},
@@ -585,4 +570,20 @@
   preview     = {spder_thumbnail.png},
   code        = {https://github.com/katop1234/SPDER/},
   url         = {https://openreview.net/forum?id=92btneN9Wm}
+}
+
+@inproceedings{huang_stronger_2025,
+  abbr        = {NAACL},
+  title       = {Stronger Universal and Transfer Attacks by Suppressing Refusals},
+  booktitle   = {Proceedings of the 2025 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)},
+  author      = {Huang, David and Shah, Avidan and Araujo, Alexandre and Wagner, David and Sitawarin, Chawin},
+  abstract    = {Making large language models (LLMs) safe for mass deployment is a complex and ongoing challenge. Efforts have focused on aligning models to human preferences (RLHF) in order to prevent malicious uses, essentially embedding a ``safety feature'' into the model's parameters. The Greedy Coordinate Gradient (GCG) algorithm (Zou et al., 2023b) emerges as one of the most popular automated jailbreaks, an attack that circumvents this safety training. So far, it is believed that these optimization-based attacks are sample-specific as opposed to hand-crafted ones. To make the automated jailbreak universal and transferable, they require incorporating multiple samples and models into the objective function. Contrary to this belief, we find that the adversarial prompts discovered by such optimizers are inherently prompt-universal and transferable, even when optimized on a single model and a single harmful request. To further amplify this phenomenon, we introduce a new objective to these optimizers to explicitly deactivate the safety feature to create an even stronger universal and transferable attack. Without requiring a large number of queries or accessing output token probabilities, our transfer attack, optimized on Llama-3, achieves a 92% success rate against the state-of-the-art Circuit Breaker defense, compared to 2.5% by white-box GCG. Crucially, our method also attains state-of-the-art transfer rates on frontier models: GPT-3.5-Turbo (96%), GPT-4o (82%), and GPT-4o-mini (88%).},
+  year        = {2025},
+  address     = {Mexico City, Mexico},
+  publisher   = {Association for Computational Linguistics},
+  month       = jan,
+  note        = {Also appeared in Neurips Safe Generative {{AI}} Workshop 2024.},
+  url         = {https://openreview.net/forum?id=kKOeZMIMlA},
+  bibtex_show = {true},
+  preview     = {iris_thumbnail.png}
 }
