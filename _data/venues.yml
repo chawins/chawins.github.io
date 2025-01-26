@@ -7,64 +7,72 @@
 
 "Preprint":
   url: https://arxiv.org/
-  color: "#b31b1b"
+  color: "#ff6e61"
 
 "Workshop":
   url: https://neurips.cc/
-  color: "#609966"
+  color: "#a1d4f2"
 
 "ICCV":
   url: https://iccv2023.thecvf.com/
-  color: "#1f5e96"
+  color: "#6b9dfa"
 
 "ICML":
   url: https://icml.cc/
-  color: "#1f5e96"
+  color: "#6b9dfa"
 
 "ICLR":
   url: https://iclr.cc/
-  color: "#1f5e96"
+  color: "#6b9dfa"
 
 "NeurIPS":
   url: https://nips.cc/
-  color: "#1f5e96"
+  color: "#6b9dfa"
 
 "AISec":
   url: https://aisec.cc/
-  color: "#609966"
+  color: "#a1d4f2"
 
 "VehicleSec":
   url: https://www.ndss-symposium.org/ndss-program/vehiclesec-2023/
-  color: "#609966"
+  color: "#a1d4f2"
 
 "DLS":
   url: https://dls2023.ieee-security.org/
-  color: "#609966"
+  color: "#a1d4f2"
 
 "CLEO":
   url: https://www.cleoconference.org/
-  color: "#1f5e96"
+  color: "#6b9dfa"
 
 "Photon. Res.":
   url: https://opg.optica.org/prj/home.cfm
-  color: "#1f5e96"
+  color: "#6b9dfa"
 
 "CCS":
   url: https://www.sigsac.org/ccs/CCS2024/
-  color: "#1f5e96"
+  color: "#6b9dfa"
 
 "CISS":
   url: https://www.itsoc.org/event/58th-annual-conference-information-sciences-and-systems-ciss
-  color: "#1f5e96"
+  color: "#6b9dfa"
 
 "ESORICS":
   url: https://esorics2024.org/
-  color: "#1f5e96"
+  color: "#6b9dfa"
 
 "USENIX Security":
   url: https://www.usenix.org/conference/usenixsecurity25
-  color: "#1f5e96"
+  color: "#6b9dfa"
 
 "ICSE":
   url: https://conf.researchr.org/home/icse-2025
-  color: "#1f5e96"
+  color: "#6b9dfa"
+
+"NAACL":
+  url: https://2025.naacl.org/
+  color: "#6b9dfa"
+
+"SatML":
+  url: https://satml.org/
+  color: "#6b9dfa"

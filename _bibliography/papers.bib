@@ -417,24 +417,6 @@
   award_name  = {Best Paper Runner-Up}
 }
 
-@inproceedings{piet_markmywords_2024,
-  abbr        = {Workshop},
-  title       = {{{MarkMyWords}}: {{Analyzing}} and Evaluating Language Model Watermarks},
-  booktitle   = {Statistical Foundations of Llms and Foundation Models ({{NeurIPS}} 2024 Workshop)},
-  author      = {Piet, Julien and Sitawarin, Chawin and Fang, Vivian and Mu, Norman and Wagner, David},
-  year        = {2024},
-  month       = oct,
-  url         = {https://openreview.net/forum?id=lZJCtOWdoU},
-  keywords    = {Benchmark,LLM,Watermark},
-  abstract    = {The capabilities of large language models have grown significantly in recent years and so too have concerns about their misuse. In this context, the ability to distinguish machine-generated text from human-authored content becomes important. Prior works have proposed numerous schemes to watermark text, which would benefit from a systematic evaluation framework. This work focuses on text watermarking techniques - as opposed to image watermarks - and proposes a comprehensive benchmark for them under different tasks as well as practical attacks. We focus on three main metrics: quality, size (e.g. the number of tokens needed to detect a watermark), and tamper-resistance. Current watermarking techniques are good enough to be deployed: Kirchenbauer et al. can watermark Llama2-7B-chat with no perceivable loss in quality in under 100 tokens, and with good tamper-resistance to simple attacks, regardless of temperature. We argue that watermark indistinguishability is too strong a requirement: schemes that slightly modify logit distributions outperform their indistinguishable counterparts with no noticeable loss in generation quality. We publicly release our benchmark.},
-  arxiv       = {2312.00273},
-  pdf         = {https://openreview.net/forum?id=lZJCtOWdoU},
-  code        = {https://github.com/wagner-group/MarkMyWords},
-  bibtex_show = {true},
-  website     = {https://wagner-group.github.io/projects/markmywords/index.html},
-  preview     = {markmywords_thumbnail.jpg}
-}
-
 @inproceedings{chen_struq_2024,
   abbr        = {USENIX Security},
   title       = {{{StruQ}}: Defending against Prompt Injection with Structured Queries},
@@ -581,9 +563,28 @@
   year        = {2025},
   address     = {Mexico City, Mexico},
   publisher   = {Association for Computational Linguistics},
-  month       = jan,
+  month       = apr,
   note        = {Also appeared in Neurips Safe Generative {{AI}} Workshop 2024.},
   url         = {https://openreview.net/forum?id=kKOeZMIMlA},
   bibtex_show = {true},
   preview     = {iris_thumbnail.png}
+}
+
+@inproceedings{piet_markmywords_2025,
+  abbr        = {SaTML},
+  title       = {{{MarkMyWords}}: {{Analyzing}} and Evaluating Language Model Watermarks},
+  booktitle   = {2025 IEEE Conference on Secure and Trustworthy Machine Learning (SaTML)},
+  author      = {Piet, Julien and Sitawarin, Chawin and Fang, Vivian and Mu, Norman and Wagner, David},
+  year        = {2025},
+  month       = apr,
+  url         = {https://openreview.net/forum?id=lZJCtOWdoU},
+  keywords    = {Benchmark,LLM,Watermark},
+  note        = {Also appeared in Statistical Foundations of Llms and Foundation Models ({{NeurIPS}} 2024 Workshop).},
+  abstract    = {The capabilities of large language models have grown significantly in recent years and so too have concerns about their misuse. In this context, the ability to distinguish machine-generated text from human-authored content becomes important. Prior works have proposed numerous schemes to watermark text, which would benefit from a systematic evaluation framework. This work focuses on text watermarking techniques - as opposed to image watermarks - and proposes a comprehensive benchmark for them under different tasks as well as practical attacks. We focus on three main metrics: quality, size (e.g. the number of tokens needed to detect a watermark), and tamper-resistance. Current watermarking techniques are good enough to be deployed: Kirchenbauer et al. can watermark Llama2-7B-chat with no perceivable loss in quality in under 100 tokens, and with good tamper-resistance to simple attacks, regardless of temperature. We argue that watermark indistinguishability is too strong a requirement: schemes that slightly modify logit distributions outperform their indistinguishable counterparts with no noticeable loss in generation quality. We publicly release our benchmark.},
+  arxiv       = {2312.00273},
+  pdf         = {https://openreview.net/forum?id=lZJCtOWdoU},
+  code        = {https://github.com/wagner-group/MarkMyWords},
+  bibtex_show = {true},
+  website     = {https://wagner-group.github.io/projects/markmywords/index.html},
+  preview     = {markmywords_thumbnail.jpg}
 }
