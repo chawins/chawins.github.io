@@ -58,9 +58,10 @@ I am extremely fortunate to have mentored and worked with lots of brilliant stud
 
 - ICLR: 2024, 2025
 - ICML: 2022 (Outstanding Reviewer), 2024, 2025
-- NeurIPS: 2022, 2023, 2024
+- NeurIPS: 2022, 2023, 2024, 2025
 - BANDS (ICLR Workshop): 2023
 
 #### program committee
 
+- IEEE S&P: 2025
 - AISec: 2022, 2023, 2024

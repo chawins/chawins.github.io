@@ -28,13 +28,14 @@ profile:
 <!-- **I am looking for a full-time researcher or a postdoc position (starting Spring 2024 or after) Please feel free to reach out!** -->
 
 Hello! My name is Chawin Sitawarin (ชวิน สีตวาริน).
-I am a postdoctoral researcher in the Privacy-Preserving Machine Learning team at Meta.
+I am a research scientist in the Security and Privacy team at Google DeepMind (Bay Area).
 
 I am broadly interested in security and privacy aspects of machine learning with a recent focus on large language models. Most of my past works are in the domain of adversarial machine learning, particularly adversarial examples and robustness of machine learning algorithms.
 
+I was a postdoctoral researcher in the Privacy-Preserving Machine Learning team at Meta ([Central Applied Science](https://research.facebook.com/teams/cas/)).
 I obtained my PhD degree in Computer Science from UC Berkeley where I was a part of [the security group](https://security.cs.berkeley.edu/), [Berkeley Artificial Intelligence Research (BAIR)](https://bair.berkeley.edu/) and [Berkeley DeepDrive (BDD)](https://bdd-data.berkeley.edu/).
 My advisor was [Prof. David Wagner](https://people.eecs.berkeley.edu/~daw/).
-I have also spent some time at IBM Research, Nokia Bell Labs, and Google Research.
+I have also spent some time at IBM Research, Nokia Bell Labs, Google Brain, and Google Research.
 
 <!-- Previously, I graduated from Princeton University in 2018 where I was very fortunate to be advised by [Prof. Prateek Mittal](https://www.princeton.edu/~pmittal/), [Prof. Peter Ramadge](http://faculty.ee.princeton.edu/ramadge/doku.html), and [Prof. Alejandro Rodriguez](http://faculty.ee.princeton.edu/arodriguez/). I was mentored and introduced to adversarial machine learning by [Arjun Bhagoji](https://arjunbhagoji.github.io/). -->
 
