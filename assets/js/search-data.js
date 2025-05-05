@@ -30,18 +30,34 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/service/";
           },
-        },{id: "post-a-post-with-image-galleries",
-      
-        title: "a post with image galleries",
-      
-      description: "this is what included image galleries could look like",
-      section: "Posts",
-      handler: () => {
+        },{id: "post-a-post-with-plotly-js",
         
-          window.location.href = "/sample-posts/2024/12/04/photo-gallery.html";
+          title: "a post with plotly.js",
         
-      },
-    },{id: "news-i-was-fortunate-to-intern-at-ibm-research-yorktown-heights-ny-over-the-summer-of-2019-and-to-be-mentored-by-supriyo-chakraborty",
+        description: "this is what included plotly.js code could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/sample-posts/2025/03/26/plotly.html";
+          
+        },
+      },{id: "post-a-post-with-image-galleries",
+        
+          title: "a post with image galleries",
+        
+        description: "this is what included image galleries could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/sample-posts/2024/12/04/photo-gallery.html";
+          
+        },
+      },{id: "books-the-godfather",
+          title: 'The Godfather',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/the_godfather.html";
+            },},{id: "news-i-was-fortunate-to-intern-at-ibm-research-yorktown-heights-ny-over-the-summer-of-2019-and-to-be-mentored-by-supriyo-chakraborty",
           title: 'I was fortunate to intern at IBM Research (Yorktown Heights, NY) over the...',
           description: "",
           section: "News",},{id: "news-our-project-was-awarded-a-grant-from-center-for-long-term-cybersecurity-cltc-for-2021",
