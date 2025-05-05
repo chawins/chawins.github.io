@@ -8,19 +8,23 @@ profile:
   align: right
   image: profile_pic2.jpg
   image_circular: false # crops the image to make it circular
-  address: >
-# <p>According to convnextv2, I am</p>
-# <p>"cardigan": 75.6%</p>
-# <p>"jean": 2.0%</p>
-# <p>"sunglasses": 1.0%</p>
-# <p>How I see myself</p>
-# <p>"giant panda": 100,000%</p>
-# <p>(he/him)</p>
+  more_info: >
+      # <p>555 your office number</p>
+      # <p>123 your address street</p>
+      # <p>Your City, State 12345</p>
 
-# news: false  # includes a list of news items
-# selected_papers: false # includes a list of papers marked as "selected={true}"
-# social: false  # includes social icons at the bottom of the page
-# latest_posts: false  # includes a list of the newest posts
+  selected_papers: false # includes a list of papers marked as "selected={true}"
+  social: false # includes social icons at the bottom of the page
+
+  announcements:
+    enabled: false # includes a list of news items
+    scrollable: true # adds a vertical scroll bar if there are more than 3 news items
+    limit: 5 # leave blank to include all the news in the `_news` folder
+
+  latest_posts:
+    enabled: false
+    scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
+    limit: 3 # leave blank to include all the blog posts
 ---
 
 [CV](/assets/pdf/Chawin_Sitawarin_CV.pdf) &nbsp;&nbsp;&nbsp;&nbsp; [Google Scholar](https://scholar.google.com/citations?hl=en&authuser=1&user=AxUAEQ4AAAAJ)
