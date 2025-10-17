@@ -221,13 +221,13 @@ function createPublicationElement(entry) {
 
     // Slides link - can be full URL or relative path to assets folder
     if (entry.slides) {
-        const slidesUrl = entry.slides.startsWith('http') ? entry.slides : `../assets/pdf/${entry.slides}`;
+        const slidesUrl = entry.slides.startsWith('http') ? entry.slides : `../asset/pdf/${entry.slides}`;
         links.appendChild(createLink('Slides', slidesUrl));
     }
 
     // Poster link - can be full URL or relative path to assets folder
     if (entry.poster) {
-        const posterUrl = entry.poster.startsWith('http') ? entry.poster : `../assets/pdf/${entry.poster}`;
+        const posterUrl = entry.poster.startsWith('http') ? entry.poster : `../asset/pdf/${entry.poster}`;
         links.appendChild(createLink('Poster', posterUrl));
     }
 
@@ -242,7 +242,7 @@ function createPublicationElement(entry) {
     }
 
     // URL link - fallback for generic links (only if no PDF is provided)
-    if (entry.url && !entry.pdf) {
+    if (entry.url && !entry.pdf && !entry.arxiv) {
         links.appendChild(createLink('Link', entry.url));
     }
 
