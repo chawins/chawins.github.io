@@ -15,6 +15,7 @@ A clean, minimalist personal website for academics featuring automatic publicati
 ### Option 1: Subdirectory Deployment (e.g., username.github.io/minimalist_website)
 
 1. **Commit all files:**
+
    ```bash
    git add .
    git commit -m "Add minimalist website"
@@ -35,11 +36,13 @@ A clean, minimalist personal website for academics featuring automatic publicati
 ### Option 2: Root Deployment (e.g., username.github.io)
 
 1. **Copy files to repository root:**
+
    ```bash
    cp minimalist_website/* .
    ```
 
 2. **Commit and push:**
+
    ```bash
    git add .
    git commit -m "Deploy minimalist website to root"
@@ -66,7 +69,7 @@ Then visit: `http://localhost:8080`
 
 ## File Structure
 
-```
+```plain
 minimalist_website/
 ├── index.html              # Home page
 ├── publications.html       # Publications page
@@ -84,6 +87,7 @@ minimalist_website/
 ## Updating Publications
 
 Simply edit `publications.bib` with your BibTeX entries. The site will automatically:
+
 - Parse the BibTeX file
 - Sort by year (descending) and month (descending)
 - Format authors (converts "LASTNAME, FIRSTNAME" to "FIRSTNAME LASTNAME")
@@ -128,6 +132,7 @@ Edit the CSS variables in `style.css`:
 ### Profile Information
 
 Edit `index.html`:
+
 - Update name, title, email
 - Modify bio text
 - Change social media links
@@ -145,16 +150,19 @@ Currently using Inter font. To change, update the Google Fonts import in all HTM
 ## Troubleshooting
 
 ### Publications not loading
+
 - Check browser console for errors
 - Verify `publications.bib` exists and is valid BibTeX
 - Try hard refresh (Cmd+Shift+R / Ctrl+Shift+R)
 
 ### Styles not applying
+
 - Clear browser cache
 - Check that `style.css` path is correct in HTML files
 - Verify CSS file is not corrupted
 
 ### GitHub Pages 404 error
+
 - Ensure `.nojekyll` file exists
 - Check that GitHub Pages is enabled in repository settings
 - Wait a few minutes for deployment to complete
