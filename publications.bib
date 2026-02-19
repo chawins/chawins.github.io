@@ -180,7 +180,7 @@
   language  = {en},
   month     = jul,
   pages     = {10},
-  pdf       = {https://chawins.github.io/assets/pdf/UDL2021-paper-048.pdf},
+  pdf       = {https://chawins.github.io/asset/pdf/UDL2021-paper-048.pdf},
   year      = {2021},
   preview   = {tradeoff_urdl2021_thumbnail.png},
   code      = {https://github.com/wagner-group/dual-domain-at}
@@ -265,7 +265,8 @@
   shorttitle    = {Rogue Signs},
   title         = {Rogue Signs: Deceiving Traffic Sign Recognition with Malicious Ads and Logos},
   year          = {2018},
-  preview       = {rogue_thumbnail.png}
+  preview       = {rogue_thumbnail.png},
+  arxiv         = {1801.02780}
 }
 
 @inproceedings{sitawarin_sat_2021,
@@ -601,7 +602,8 @@
   address   = {New York, NY, USA},
   doi       = {10.1145/3733799.3762982},
   abstract  = {When large language model (LLM) systems interact with external data to perform complex tasks, a new attack, namely prompt injection, becomes a significant threat. By injecting instructions into the data accessed by the system, the attacker is able to override the initial user task with an arbitrary task directed by the attacker. To secure the system, test-time defenses, e.g., defensive prompting, have been proposed for system developers to attain security only when needed in a flexible manner. However, they are much less effective than training-time defenses that change the model parameters. Motivated by this, we propose DefensiveToken, a test-time defense with prompt injection robustness comparable to training-time alternatives. DefensiveTokens are newly inserted as special tokens, whose embeddings are optimized for security. In security-sensitive cases, system developers can append a few DefensiveTokens before the LLM input to achieve security with a minimal utility drop. In scenarios where security is less of a concern, developers can simply skip DefensiveTokens; the LLM system remains the same as there is no defense, generating high-quality responses. Thus, DefensiveTokens, if released alongside the model, allow a flexible switch between the state-of-the-art (SOTA) utility and almost-SOTA security at test time. The code is available here.},
-  isbn      = {979-8-4007-1895-3}
+  isbn      = {979-8-4007-1895-3},
+  arxiv     = {2507.07974}
 }
 
 @inproceedings{piet2026jailbreaksovertime,
@@ -617,7 +619,8 @@
   address   = {New York, NY, USA},
   doi       = {10.1145/3733799.3762981},
   abstract  = {Safety and security remain critical concerns in AI deployment. Despite safety training through reinforcement learning with human feedback (RLHF)\&nbsp;[34], language models remain vulnerable to jailbreak attacks that bypass safety guardrails. Universal jailbreaks---prefixes that can circumvent alignment for any payload---are particularly concerning. We show empirically that jailbreak detection systems face distribution shift, with detectors trained at one point in time performing poorly against newer exploits. To study this problem, we release JailbreaksOverTime , a comprehensive dataset of timestamped real user interactions that contains benign requests and jailbreak attempts over the span of 10 months. We propose a two-pronged method for defenders to detect new jailbreaks and continuously update their detectors. First, we show how to use continuous learning to detect jailbreaks and adapt rapidly to new emerging jailbreaks. While detectors trained at a single point in time eventually fail due to drift, we find that universal jailbreaks evolve slowly enough for self-training to be effective. Retraining our detection model weekly using its own labels---with no new human labels---reduces the false negative rate from 4\% to 0.3\% at a false positive rate of 0.1\%. Second, we introduce an unsupervised active monitoring approach to identify novel jailbreaks. Rather than classifying inputs directly, we recognize jailbreaks by their behavior, specifically, their ability to trigger models to respond to known-harmful prompts. We find that active monitoring can identify out-of-distribution attacks that were missed by continuous learning; overall, these methods provide insights on building jailbreak detectors that are resistant to concept drift.},
-  isbn      = {979-8-4007-1895-3}
+  isbn      = {979-8-4007-1895-3},
+  arxiv     = {2504.19440}
 }
 
 @misc{morris2025how,
@@ -685,7 +688,8 @@
   doi           = {10.48550/arXiv.2510.18554},
   urldate       = {2025-10-22},
   abstract      = {In this work, we show that it is possible to extract significant amounts of alignment training data from a post-trained model -- useful to steer the model to improve certain capabilities such as long-context reasoning, safety, instruction following, and maths. While the majority of related work on memorisation has focused on measuring success of training data extraction through string matching, we argue that embedding models are better suited for our specific goals. Distances measured through a high quality embedding model can identify semantic similarities between strings that a different metric such as edit distance will struggle to capture. In fact, in our investigation, approximate string matching would have severely undercounted (by a conservative estimate of \$10\textbackslash times\$) the amount of data that can be extracted due to trivial artifacts that deflate the metric. Interestingly, we find that models readily regurgitate training data that was used in post-training phases such as SFT or RL. We show that this data can be then used to train a base model, recovering a meaningful amount of the original performance. We believe our work exposes a possibly overlooked risk towards extracting alignment data. Finally, our work opens up an interesting discussion on the downstream effects of distillation practices: since models seem to be regurgitating aspects of their training set, distillation can therefore be thought of as indirectly training on the model's original dataset.},
-  archiveprefix = {arXiv}
+  archiveprefix = {arXiv},
+  arxiv         = {2510.18554}
 }
 
 @misc{walter2025soft,
@@ -701,5 +705,6 @@
   doi           = {10.48550/arXiv.2510.21057},
   urldate       = {2025-10-27},
   abstract      = {Large Language Models (LLMs) are increasingly deployed in agentic systems that interact with an external environment; this makes them susceptible to prompt injections when dealing with untrusted data. To overcome this limitation, we propose SIC (Soft Instruction Control)-a simple yet effective iterative prompt sanitization loop designed for tool-augmented LLM agents. Our method repeatedly inspects incoming data for instructions that could compromise agent behavior. If such content is found, the malicious content is rewritten, masked, or removed, and the result is re-evaluated. The process continues until the input is clean or a maximum iteration limit is reached; if imperative instruction-like content remains, the agent halts to ensure security. By allowing multiple passes, our approach acknowledges that individual rewrites may fail but enables the system to catch and correct missed injections in later steps. Although immediately useful, worst-case analysis shows that SIC is not infallible; strong adversary can still get a 15\% ASR by embedding non-imperative workflows. This nonetheless raises the bar.},
-  archiveprefix = {arXiv}
+  archiveprefix = {arXiv},
+  arxiv         = {2510.21057}
 }
