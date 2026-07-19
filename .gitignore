@@ -1,0 +1,11 @@
+# LaTeX build artifacts (resume/)
+resume/*.aux
+resume/*.log
+resume/*.out
+resume/*.fls
+resume/*.fdb_latexmk
+resume/*.synctex.gz
+resume/main.pdf
+
+# Playwright MCP snapshots
+.playwright-mcp/

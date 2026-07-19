@@ -1,0 +1,301 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt,letterpaper,roman]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.85,top=1.2in,bottom=1.2in]{geometry} % Reduce document margins
+\setlength{\hintscolumnwidth}{1.8cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+\usepackage{xcolor}
+\usepackage{enumitem}
+\newcommand{\myhref}[3][blue]{\href{#2}{\color{#1}{#3}}}
+
+\usepackage[most]{tcolorbox}
+\usepackage{xcolor}
+% \usepackage{hyperref}
+
+% --- Define custom colors (same as before) ---
+% \definecolor{paperbg}{RGB}{232, 240, 254} % A light blue
+% \definecolor{paperborder}{RGB}{138, 180, 248}
+% \definecolor{codebg}{RGB}{232, 234, 237}   % A light gray
+% \definecolor{codeborder}{RGB}{154, 160, 166}
+\definecolor{paperbg}{RGB}{66, 133, 244} % Blue
+\definecolor{paperborder}{RGB}{66, 133, 244}
+\definecolor{codebg}{RGB}{253, 181, 21}   % Yellow
+\definecolor{codeborder}{RGB}{253, 181, 21}
+
+% --- Define styles for tcolorbox ---
+\tcbset{
+  pubtagstyle/.style={
+    enhanced,
+    nobeforeafter,
+    arc=2pt,
+    boxsep=0pt,
+    top=1pt, bottom=1pt, left=3pt, right=3pt,
+    fontupper={\small\sffamily},
+    bicolor,
+    coltext=white,
+  }
+}
+\newcommand{\paperTag}[1]{\href{#1}{\raisebox{-2.5pt}{\tcbox[
+    pubtagstyle,
+    colback=paperbg,
+    colframe=paperborder
+  ]{paper}}}}
+\newcommand{\codeTag}[1]{\href{#1}{\raisebox{-2.5pt}{\tcbox[
+    pubtagstyle,
+    colback=codebg,
+    colframe=codeborder
+  ]{code}}}}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Chawin} % Your first name
+\familyname{Sitawarin} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+%\title{Curriculum Vitae}
+% \address{Soda Hall, UC Berkeley}{Berkeley, CA 94709}
+% \mobile{510-423-2880}
+%\phone{(000) 111 1112}
+%\fax{(000) 111 1113}
+\email{chawin.sitawarin@gmail.com}
+\homepage{https://chawins.github.io/}{https://chawins.github.io/} % The first argument is %the url for the clickable link, the second argument is the url displayed in the %template - this allows special characters to be displayed such as the tilde in this %example
+%\extrainfo{additional information}
+%\photo[70pt][0.4pt]{picture} % The first bracket is the picture height, the second is %the thickness of the frame around the picture (0pt for no frame)
+\quote{
+Machine Learning Security \& Privacy Researcher
+}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experiences}
+
+\cventry{2026--present}{Member of Technical Staff}{Anthropic}{}{Safeguards Research}{}
+
+\cventry{2025--2026}{Research Scientist}{Google DeepMind}{GenAI}{Security and Privacy Research}{}
+
+\cventry{2024--2025}{Postdoctoral Researcher}{Meta}{Central Applied Science}{Privacy-Preserving Machine Learning}{Memorization, privacy, and copyright risks in generative AI}
+
+\cventry{2018--2024}{PhD in Computer Science}{UC Berkeley}{}{}{LLM security and adversarial robustness, advised by Prof. David Wagner}
+
+\cventry{2014--2018}{BSE in Electrical Engineering (High Honor)}{Princeton University}{}{}{Certificate in Applications of Computing}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Research Interests}
+
+\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+% \cvlistdoubleitem{Robustness of Machine Learning}{Adversarial Examples}
+% \cvlistdoubleitem{Interpretable Machine Learning}{Security and Privacy of Data-Driven Applications}
+I am broadly interested in security and privacy aspects of machine learning.
+My recent works are on \textbf{jailbreak} attacks and \textbf{prompt injection} defenses on large language models; my older works are on the \textbf{adversarial robustness} of machine learning algorithms.
+% My recent interests are on large language models, especially
+Currently, 
+% my interests are on frontier models, especially
+the problems I am excited about are:
+% \begin{enumerate}[nosep,leftmargin=20pt]
+%     \item Memorization, privacy, and copyright risks
+%     \item Safety, security, and prompt injection
+% \end{enumerate}
+
+\smallskip\noindent
+% \hspace{40pt} 
+(1) Better evaluation of memorization, privacy, and copyright risks
+% \hspace{20pt} and \hspace{20pt}
+\hspace{20pt}
+(2) Safety, security, and prompt injection defenses
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Selected Publications}
+
+\cventry{2026}{How Much Can Language Models Memorize?}{J. Morris, \underline{C. Sitawarin}, C. Guo, N. Kokhlikyan, E. Suh, A. M. Rush, K. Chaudhuri, S. Mahloujifar}{ICML 2026 (Oral, \textbf{Outstanding Paper Honorable Mention}) \paperTag{https://openreview.net/forum?id=bA6BgSbaUi}}{}{}{}
+
+\cventry{2026}{Rapid Poison: Practical Poisoning Attacks Against the Rapid Response Framework}{D. Huang, J. Chang, A. Shah, P. Mittal, \underline{C. Sitawarin}}{ICML 2026 (Spotlight) \paperTag{https://openreview.net/forum?id=hvI3Syn2U7}\codeTag{https://github.com/DH-davidhuang/rapid-poison}}{}{}{}
+
+\cventry{2026}{Extracting Alignment Data in Open Models}{F. Barbero, X. Gu, C. A. Choquette-Choo, \underline{C. Sitawarin}, M. Jagielski, I. Yona, P. Veli\v{c}kovi\'{c}, I. Shumailov, J. Hayes}{ICML 2026 \paperTag{https://openreview.net/forum?id=3XXb2MK02l}}{}{}{}
+
+\cventry{2026}{The Attacker Moves Second: Stronger Adaptive Attacks Bypass Defenses Against LLM Jailbreaks and Prompt Injections}{M. Nasr*, N. Carlini*, \underline{C. Sitawarin}*, S. V. Schulhoff*, J. Hayes, M. Ilie, J. Pluto, S. Song, H. Chaudhari, I. Shumailov, A. Thakurta, K. Y. Xiao, A. Terzis, F. Tram{\`e}r}{USENIX Security 2026 \paperTag{https://arxiv.org/abs/2510.09023}}{}{}{}
+
+\cventry{2025}{Stronger Universal and Transferable Attacks by Suppressing Refusals}{D. Huang, A. Shah, A. Araujo, D. Wagner, \underline{C. Sitawarin}}{NAACL 2025 \paperTag{https://aclanthology.org/2025.naacl-long.302/}}{}{}{}
+
+\cventry{2025}{Mark My Words: Analyzing and Evaluating Language Model Watermarks}{J. Piet, \underline{C. Sitawarin}, V. Fang, N. Mu, D. Wagner}{SaTML 2025 \paperTag{https://arxiv.org/abs/2312.00273}\codeTag{https://github.com/wagner-group/markmywords}}{}{}{}
+
+\cventry{2025}{Vulnerability Detection with Code Language Models: How Far Are We?}{Y. Ding, Y. Fu, O. Ibrahim, \underline{C. Sitawarin}, X. Chen, B. Alomair, D. Wagner, B. Ray, Y. Chen}{ICSE 2025 \paperTag{https://arxiv.org/abs/2403.18624}\codeTag{https://github.com/dlvuldet/primevul}}{}{}{}
+
+% \cventry{2024}{OODRobustBench: Benchmarking and Analyzing Adversarial Robustness Under Distribution Shift}{L. Li, Y. Wang, \underline{C. Sitawarin}, M. Spratling}{ICML 2024 (Poster)}{\codeTag{https://arxiv.org/abs/2310.12793}}{}{}
+\cventry{2025}{StruQ: Defending Against Prompt Injection with Structured Queries}{S. Chen, J. Piet, \underline{C. Sitawarin}, D. Wagner}{USENIX Security 2025 \paperTag{https://arxiv.org/abs/2402.06363}\codeTag{https://github.com/Sizhe-Chen/StruQ}}{}{}{}
+
+\cventry{2024}{PAL: Proxy-Guided Black-Box Attack on Large Language Models}{\underline{C. Sitawarin}, N. Mu, D. Wagner, A. Araujo}{Preprint \paperTag{https://arxiv.org/abs/2402.09674}\codeTag{https://github.com/chawins/pal}}{}{}{}
+
+\cventry{2024}{Jatmo: Prompt Injection Defense by Task-Specific Finetuning}{J. Piet*, M. Alrashed*, \underline{C. Sitawarin}, et al.}{ESORICS 2024 \paperTag{https://arxiv.org/abs/2312.17673}\codeTag{https://github.com/wagner-group/prompt-injection-defense}}{}{}{}
+
+\cventry{2024}{PubDef: Defending against Transfer Attacks from Public Models}{\underline{C. Sitawarin}, J. Chang*, D. Huang*, W. Altoyan, D. Wagner}{ICLR 2024 (Poster) \paperTag{https://openreview.net/forum?id=Tvwf4Vsi5F}\codeTag{https://github.com/wagner-group/pubdef}}{}{}{}
+
+% \cventry{2024}{SPDER: Semiperiodic Damping-Enabled Object Representation}{K. Shah, \underline{C. Sitawarin}}{ICLR 2024 (Poster)}{\codeTag{https://openreview.net/forum?id=92btneN9Wm}}{}{}
+
+
+% \cventry{2023}{REAP: A Large-Scale Realistic Adversarial Patch Benchmark}{N. Hingun*, \underline{C. Sitawarin}*, J. Li, D. Wagner}{ICCV 2023 (Poster)}{\codeTag{https://openaccess.thecvf.com/content/ICCV2023/html/Hingun_REAP_A_Large-Scale_Realistic_Adversarial_Patch_Benchmark_ICCV_2023_paper.html}, \codeTag{https://github.com/wagner-group/reap-benchmark}}{}{}
+
+\cventry{2023}{Preprocessors Matter! Realistic Decision-Based Attacks on Machine Learning Systems}{\underline{C. Sitawarin}, F. Tram{\`e}r, N. Carlini}{ICML 2023 (Poster) \paperTag{https://proceedings.mlr.press/v202/sitawarin23a/sitawarin23a.pdf}\codeTag{https://github.com/google-research/preprocessor-aware-black-box-attack}}{}{}
+
+\cventry{2023}{Part-Based Models Improve Adversarial Robustness}{\underline{C. Sitawarin}, K. Pongmala, Y. Chen, N. Carlini, D. Wagner}{ICLR 2023 (Poster) \paperTag{https://arxiv.org/abs/2209.09117}\codeTag{https://github.com/chawins/adv-part-model}}{}{}
+
+\cventry{2022}{Demystifying the Adversarial Robustness of Random Transformation Defenses}{\underline{C. Sitawarin}, Z. Golan-Strieb, D. Wagner}{ICML 2022 and AAAI-22 AdvML Workshop (Best Paper) \paperTag{https://openreview.net/forum?id=p4SrFydwO5}\codeTag{https://github.com/wagner-group/demystify-random-transform}}{}{}
+
+% \cventry{2021}{Adversarial Examples for $k$-Nearest Neighbor Classifiers Based on Higher-Order Voronoi Diagrams}{\underline{C. Sitawarin}, E. M. Kornaropoulos, D. Song, D. Wagner}{NeurIPS 2021 (Poster) \paperTag{https://arxiv.org/abs/2011.09719}\codeTag{https://github.com/wagner-group/geoadex}}{}{}
+
+% \cventry{2021}{Improving the Accuracy-Robustness Trade-Off for Dual-Domain Adversarial Training}{\underline{C. Sitawarin}, A. Sridhar, D. Wagner}{Workshop on Uncertainty \& Robustness in Deep Learning (ICML 2021)}{\codeTag{http://www.gatsby.ucl.ac.uk/~balaji/udl2021/accepted-papers/UDL2021-paper-048.pdf}, \codeTag{https://github.com/wagner-group/dual-domain-at}}{}
+
+% \cventry{2021}{Mitigating Adversarial Training Instability with Batch Normalization}{A. Sridhar, \underline{C. Sitawarin}, D. Wagner}{Workshop on Security and Safety in Machine Learning Systems (ICLR 2021)}{\codeTag{https://aisecure-workshop.github.io/aml-iclr2021/papers/43.pdf}}{}
+
+\cventry{2021}{SAT: Improving Adversarial Training via Curriculum-Based Loss Smoothing}{\underline{C. Sitawarin}, S. Chakraborty, D. Wagner}{AISec 2021 (co-located with CCS) \paperTag{https://arxiv.org/abs/2003.09347}}{}{}
+
+\cventry{2020}{Minimum-Norm Adversarial Examples on $k$-NN and $k$-NN-Based Models}{\underline{C. Sitawarin}, D. Wagner}{Deep Learning and Security Workshop (IEEE S\&P 2020) \paperTag{https://arxiv.org/abs/2003.06559}}{}{}
+
+% \cventry{2019}{Analyzing the Robustness of Open-World Machine Learning}{V. Sehwag, A. N. Bhagoji, L. Song, \underline{C. Sitawarin}, D. Cullina, M. Chiang, and P. Mittal}{AISec 2019 (co-located with CCS)}{\codeTag{https://www.princeton.edu/~pmittal/publications/ood-attacks-aisec19.pdf}}{}
+
+% \cventry{2019}{Defending Against Adversarial Examples with K-Nearest Neighbor}{\underline{C. Sitawarin}, D. Wagner}{Preprint}{\codeTag{https://arxiv.org/abs/1906.09525}, \codeTag{https://github.com/chawins/knn-defense}}{}
+
+\cventry{2018}{On the Robustness of Deep $k$-Nearest Neighbors}{\underline{C. Sitawarin}, D. Wagner}{Deep Learning and Security Workshop (IEEE S\&P 2019) \paperTag{https://arxiv.org/abs/1903.08333}}{}{}
+
+% \cventry{2018}{Not All Pixels are Born Equal: An Analysis of Evasion Attacks under Locality Constraints}{V. Sehwag, \underline{C. Sitawarin}, A. N. Bhagoji, A. Mosenia, M. Chiang, P. Mittal}{CCS 2018 Poster}{\codeTag{https://dl.acm.org/citation.cfm?id=3278515}}{}
+
+% \cventry{2018}{Enhancing Robustness of Classifiers Against Adversarial Examples}{}{Undergraduate Thesis}{Advisor: Professor Peter Ramadge}{}
+
+\cventry{2018}{DARTS: Deceiving Autonomous Cars with Toxic Signs}{\underline{C. Sitawarin}, A. N. Bhagoji, A. Mosenia, M. Chiang, P. Mittal}{Preprint \paperTag{https://arxiv.org/abs/1802.06430}}{}{}
+
+% \cventry{2018}{Rogue signs: Deceiving Traffic Sign Recognition with Malicious Ads and Logos}{\underline{C. Sitawarin}, A. N. Bhagoji, A. Mosenia, M. Chiang, P. Mittal}{Deep Learning and Security Workshop (IEEE S\&P 2018)}{\codeTag{https://arxiv.org/abs/1801.02780}}{}
+
+\cventry{2018}{Enhancing Robustness of Machine Learning System via Data Transformations}{A. N. Bhagoji, D. Cullina, \underline{C. Sitawarin}, P. Mittal}{CISS 2018 \paperTag{https://ieeexplore.ieee.org/document/8362326}}{}{}
+
+% \cventry{2018}{Inverse-Designed Photonic Fibers and Metasurfaces for Nonlinear Frequency Conversion}{\underline{C. Sitawarin}, Z. Lin, W. Jin and A. W. Rodriguez}{Photonics Research Vol. 6, Issue 5}{\codeTag{https://www.osapublishing.org/prj/abstract.cfm?uri=prj-6-5-B82}}{}
+
+% \cventry{2017}{Beyond Grand Theft Auto V for Training, Testing and Enhancing Deep Learning in Self Driving Cars}{M. A. Martinez, \underline{C. Sitawarin}, K. Finch, L. Meincke, A. Yablonski, A. Kornhauser}{Preprint}{\codeTag{https://arxiv.org/abs/1712.01397}}{}
+
+% \cventry{2016}{Inverse-designed nonlinear nanophotonic structures: Enhanced frequency conversion at the nano scale}{Z. Lin, \underline{C. Sitawarin}, M. Lon\v{c}ar, A. W. Rodriguez}{Conference on Lasers and Electro-Optics (CLEO) 2016}{\codeTag{https://www.osapublishing.org/abstract.cfm?uri=CLEO_SI-2016-SM2E.1}}{}
+
+%----------------------------------------------------------------------------------------
+
+\section{Prior Internships}
+
+% \cventry{August 2022 - present}{KACST-UCB Joint Center on Cybersecurity}{Berkeley}{Graduate student researcher}{}{Conduct research on multiple topics related to adversarial machine learning: defense against transfer attacks, language model watermarking, deep learning for code vulnerability detection.}
+
+\cventry{Summer 2022}{Google}{Sunnyvale CA}{Research intern}{}{Developed a defense against transfer adversarial attacks for a malware classification task with a pair of public client-side and secret server-side models. Hosted by Ali Zand and David Tao.}
+
+\cventry{Fall 2021--Spring 2022}{Google}{Remote}{Part-time student researcher}{}{Developed new query-based adversarial attack and model-stealing attack against a black-box image preprocessing and recognition pipeline. Hosted by Nicholas Carlini.}
+
+\cventry{Summer 2021}{Nokia Bell Labs}{Remote}{Research intern}{}{Investigated relationships between causality and robustness in machine learning, focusing on leveraging causal relationship to improve robustness and generalization to unseen corruptions. Hosted by Anwar Walid.}
+
+% \cventry{Fall 2020}{EECS Department, UC Berkeley}{Berkeley CA}{Graduate student instructor}{}{Part of the content development team for CS189/289A: Introduction to Machine Learning. Created homework problems and materials for the discussion sections and taught discussion sections.}
+
+\cventry{Summer 2019}{IBM Research}{Yorktown Heights NY}{Research intern}{}{Studied the effectiveness of existing defenses against adversarial examples from a perspective of concentration bound and improved adversarial training through optimization techniques. Hosted by Supriyo Chakraborty.}
+
+% \cventry{Summer 2016}{Hong Kong Applied Science and Technology Research Institute (ASTRI)}{Hong Kong}{Summer intern in IC Digital Design team}{}{Implemented image processing module written in C and Matlab using Vivado High-Level Synthesis tool, and evaluated its efficiency compared to human-written RTL code.}
+
+% \cventry{2015--2016}{Princeton University}{Princeton NJ}{Lab TA and Grader}{}{Contemporary Logic Design Lab Teaching Assistant (Fall 2016), Information Security Grader (Fall 2016), Algorithms and Data Structures Grader (Spring 2016), General Computer Science Grader (Fall 2015).}
+
+%----------------------------------------------------------------------------------------
+
+\section{Awards \& Grants}
+
+\cvitemwithcomment{2023}{Outstanding Graduate Student Instructor Award}{Teaching award}
+\cvitemwithcomment{2022}{Google-BAIR Commons Project}{Research grant}
+\cvitemwithcomment{2021--2022}{Center for Long-Term Cybersecurity (CLTC)}{Research grant}
+\cvitemwithcomment{2021}{Microsoft-BAIR Commons Project}{Research grant}
+\cvitemwithcomment{2018}{Phi Beta Kappa}{Academic honor society}
+\cvitemwithcomment{2018}{Sigma Xi}{Scientific research honor society}
+\cvitemwithcomment{2017}{The P. Michael Lion III Fund}{Summer research funding for Princeton engineering students}
+\cvitemwithcomment{2016}{Tau Beta Pi}{Engineering honor society}
+\cvitemwithcomment{2016}{Shapiro Prize for Academic Excellence}{Academic award at Princeton University}
+\cvitemwithcomment{2013}{King's Scholarship}{Prestigious scholarship awarded by Thai government for pursuing a bachelor's degree}
+
+%----------------------------------------------------------------------------------------
+
+\section{Services}
+
+% \cventry{}{Program Committee}{}{}{}{}
+\cventry{}{Reviewer}{}{ICLR '24, '25 | ICML '22 (top reviewer), '24, '25, '26 | NeurIPS '22, '23, '24. '25 | TPAMI '24 | IEEE S\&P '26 | CCS '26 | AISec '22, '23, '24, '25}{}{}
+% \cventry{2019--2023}{DARE: Diversifying Access to Research in Engineering}{Mentor}{I have mentored multiple students from DARE, a program that promotes diversity in EECS undergraduate research}{}{}
+% \cventry{2018--2020}{CSGSA}{Treasurer}{Computer Science Graduate Student Assembly at UC Berkeley}{}{}
+% \cventry{2018--2019}{Security Seminar}{Organizer}{Organized a biweekly seminar on security and privacy at UC Berkeley, hosting outside speakers from both industry and academia}{}{}
+% \cventry{2016--2017}{THAIgers}{Co-President}{Princeton Thai Student Association}{}{}
+
+%----------------------------------------------------------------------------------------
+
+% \section{Relevant Coursework}
+
+% \cvlistdoubleitem{Optimization}{Statistical Learning Theory}
+% \cvlistdoubleitem{Deep Unsupervised Learning}{Deep Reinforcement Learning}
+% \cvlistdoubleitem{Computer Security and Privacy}{Computer Vision}
+% \cvlistdoubleitem{Computer Networks}{}
+
+% \cventry{}{Optimization \qquad Statistical Learning Theory \qquad Deep Unsupervised Learning \qquad Deep Reinforcement Learning \qquad Computer Security and Privacy \qquad  Computer Vision}{}{}{}{}
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+%\clearpage
+
+%\recipient{HR Departmnet}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+%\date{\today} % Letter date
+%\opening{Dear Sir or Madam,} % Opening greeting
+%\closing{Sincerely yours,} % Closing phrase
+%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+
+%\makelettertitle % Print letter title
+
+%\lipsum[1-3] % Dummy text
+
+%\makeletterclosing % Print letter signature
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
