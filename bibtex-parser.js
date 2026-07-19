@@ -64,11 +64,27 @@ class BibtexParser {
     value = value.replace(/--/g, "–");
     value = value.replace(/\\&/g, "&");
     value = value.replace(/\\\$/g, "$");
+    value = value.replace(/\\%/g, "%");
+    value = value.replace(/\\#/g, "#");
+    value = value.replace(/\\_/g, "_");
+    value = value.replace(/\\texttimes/g, "×");
+    value = value.replace(/\\textbackslash\s*/g, "\\");
+    value = value.replace(/&nbsp;/g, " ");
+    value = value.replace(/&#x00A0;/gi, " ");
     value = value.replace(/~/g, " ");
 
     // Handle special characters
     value = value.replace(/\\'e/g, "é");
     value = value.replace(/\\`e/g, "è");
+    value = value.replace(/\\'c/g, "ć");
+    value = value.replace(/\\'a/g, "á");
+    value = value.replace(/\\'o/g, "ó");
+    value = value.replace(/\\"o/g, "ö");
+    value = value.replace(/\\"u/g, "ü");
+    value = value.replace(/\\"a/g, "ä");
+    value = value.replace(/\\v\s*c/g, "č");
+    value = value.replace(/\\v\s*s/g, "š");
+    value = value.replace(/\\v\s*z/g, "ž");
 
     return value;
   }
