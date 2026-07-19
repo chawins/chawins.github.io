@@ -677,18 +677,19 @@
   abstract      = {Gemini is increasingly used to perform tasks on behalf of users, where function-calling and tool-use capabilities enable the model to access user data. Some tools, however, require access to untrusted data introducing risk. Adversaries can embed malicious instructions in untrusted data which cause the model to deviate from the user's expectations and mishandle their data or permissions. In this report, we set out Google DeepMind's approach to evaluating the adversarial robustness of Gemini models and describe the main lessons learned from the process. We test how Gemini performs against a sophisticated adversary through an adversarial evaluation framework, which deploys a suite of adaptive attack techniques to run continuously against past, current, and future versions of Gemini. We describe how these ongoing evaluations directly help make Gemini more resilient against manipulation.}
 }
 
-@misc{barbero2025extracting,
-  abbr          = {Preprint},
+@inproceedings{barbero2025extracting,
+  abbr          = {ICML},
   title         = {Extracting Alignment Data in Open Models},
+  booktitle     = {Proceedings of the 43rd International Conference on Machine Learning},
   author        = {Barbero, Federico and Gu, Xiangming and {Choquette-Choo}, Christopher A. and Sitawarin, Chawin and Jagielski, Matthew and Yona, Itay and Veli{\v c}kovi{\'c}, Petar and Shumailov, Ilia and Hayes, Jamie},
-  year          = 2025,
-  month         = oct,
-  number        = {arXiv:2510.18554},
+  year          = {2026},
+  month         = jul,
+  series        = {Proceedings of Machine Learning Research},
+  publisher     = {PMLR},
   eprint        = {2510.18554},
   primaryclass  = {cs},
-  publisher     = {arXiv},
-  doi           = {10.48550/arXiv.2510.18554},
-  urldate       = {2025-10-22},
+  url           = {https://openreview.net/forum?id=3XXb2MK02l},
+  pdf           = {https://openreview.net/forum?id=3XXb2MK02l},
   abstract      = {In this work, we show that it is possible to extract significant amounts of alignment training data from a post-trained model -- useful to steer the model to improve certain capabilities such as long-context reasoning, safety, instruction following, and maths. While the majority of related work on memorisation has focused on measuring success of training data extraction through string matching, we argue that embedding models are better suited for our specific goals. Distances measured through a high quality embedding model can identify semantic similarities between strings that a different metric such as edit distance will struggle to capture. In fact, in our investigation, approximate string matching would have severely undercounted (by a conservative estimate of 10×) the amount of data that can be extracted due to trivial artifacts that deflate the metric. Interestingly, we find that models readily regurgitate training data that was used in post-training phases such as SFT or RL. We show that this data can be then used to train a base model, recovering a meaningful amount of the original performance. We believe our work exposes a possibly overlooked risk towards extracting alignment data. Finally, our work opens up an interesting discussion on the downstream effects of distillation practices: since models seem to be regurgitating aspects of their training set, distillation can therefore be thought of as indirectly training on the model's original dataset.},
   archiveprefix = {arXiv},
   arxiv         = {2510.18554}
